@@ -6,14 +6,15 @@
   letter-spacing: 0.03em;
 
   color: $color-default-white;
+
   @include tablet {
     font-size: 24px;
-  line-height: 29px;
-  letter-spacing: 0.02em;
+    line-height: 29px;
+    letter-spacing: 0.02em;
   }
 
   @include mobile {
-       font-size: 20px;
-  line-height: 24px;
-      }
+    font-size: 20px;
+    line-height: 24px;
+  }
 }

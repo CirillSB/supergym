@@ -1,0 +1,35 @@
+.gym {
+  position: relative;
+}
+
+.gym__inner {
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.gym__video {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 50%);
+}
+
