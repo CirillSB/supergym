@@ -1,0 +1,29 @@
+.main-header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding-top: 30px;
+  z-index: 50;
+
+  @include tablet {
+    padding-top: 34px;
+  }
+
+  @include mobile {
+    padding-top: 15px;
+  }
+}
+
+.main-header__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.main-header__logo {
+  margin: 0 0 0 -1px;
+  padding: 0;
+}
+
+.main-header__link {}
