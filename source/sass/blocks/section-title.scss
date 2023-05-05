@@ -1,0 +1,13 @@
+.section-title {
+  font-family: $ff-alumni-semi-bold;
+  font-weight: 600;
+  font-size: 54px;
+  line-height: 65px;
+  letter-spacing: 0.03em;
+
+  color: $color-sapphire;
+  &--small {
+  	font-size: 48px;
+  line-height: 58px;
+  }
+}

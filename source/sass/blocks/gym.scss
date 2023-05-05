@@ -1,18 +1,72 @@
 .gym {
   position: relative;
+  &::after {
+    display: block;
+    content: "";
+    width: 100%;
+    height: 115px;
+  }
 }
 
 .gym__inner {
-	display: flex;
-	justify-content: space-between;
-	align-items: flex-start;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 120px 0 100px;
 }
 
+.gym__description {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 39px 80px 50px 59px;
 
+  b {
+    font-family: $ff-roboto-regular;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 27px;
+    color: $color-sapphire;
 
+    margin: 0 0 40px 0;
+  }
 
+  p {
+    margin: 0 0 7px 0;
+    font-family: $ff-roboto-light;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 24px;
 
+    color: $color-sapphire;
 
+    &:last-child {
+      margin: 0;
+    }
+  }
+}
+
+.gym__title {
+  margin: 0 0 7px 0;
+}
+
+// .gym__subtitle {
+//   font-family: $ff-roboto-regular;
+//   font-style: normal;
+//   font-weight: 400;
+//   font-size: 18px;
+//   line-height: 27px;
+//   color: $color-sapphire;
+
+//   margin: 0 0 40px 0;
+// }
+
+.gym__banner {
+  width: calc(660 / 1158 * 100%);
+  flex-shrink: 0;
+}
 
 
 
@@ -28,8 +82,31 @@
 
 .gym__video {
   position: absolute;
-  bottom: 0;
-  left: 50%;
+  bottom: 233px;
+  left: 53%;
   transform: translate(-50%, 50%);
 }
+.gym__play-button {
+    position: absolute;
+    border: 2px solid;
 
+border: linear-gradient(97.05deg, rgba(237, 2, 51, 0.2) 17.6%, rgba(0, 62, 183, 0.2) 95.31%);
+
+
+;
+
+    top: 0;
+    left: 50%;
+    border-radius: 50%;
+    transform: translate(-50%, 50%);
+    padding: 0;
+    width: 100px;
+    height: 100px;
+    background-color: transparent;
+    color: transparent;
+    // background-image: url("../img/svg/play.svg");
+    z-index: 50;
+    &:hover {
+      background-color: red;
+    }  
+  }

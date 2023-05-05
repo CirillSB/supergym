@@ -1454,6 +1454,13 @@ button,
   position: relative;
 }
 
+.gym::after {
+  display: block;
+  content: "";
+  width: 100%;
+  height: 115px;
+}
+
 .gym__inner {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1464,15 +1471,102 @@ button,
   -webkit-box-align: start;
   -ms-flex-align: start;
   align-items: flex-start;
+  padding: 120px 0 100px;
+}
+
+.gym__description {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  padding: 39px 80px 50px 59px;
+}
+
+.gym__description b {
+  font-family: "RobotoCondensed-Regular", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 27px;
+  color: #102654;
+  margin: 0 0 40px 0;
+}
+
+.gym__description p {
+  margin: 0 0 7px 0;
+  font-family: "RobotoCondensed-Light", "Arial", sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 24px;
+  color: #102654;
+}
+
+.gym__description p:last-child {
+  margin: 0;
+}
+
+.gym__title {
+  margin: 0 0 7px 0;
+}
+
+.gym__banner {
+  width: 56.9948186528%;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
 }
 
 .gym__video {
   position: absolute;
-  bottom: 0;
-  left: 50%;
+  bottom: 233px;
+  left: 53%;
   -webkit-transform: translate(-50%, 50%);
   -ms-transform: translate(-50%, 50%);
   transform: translate(-50%, 50%);
+}
+
+.gym__play-button {
+  position: absolute;
+  border: 2px solid;
+  border: linear-gradient(97.05deg, rgba(237, 2, 51, 0.2) 17.6%, rgba(0, 62, 183, 0.2) 95.31%);
+  top: 0;
+  left: 50%;
+  border-radius: 50%;
+  -webkit-transform: translate(-50%, 50%);
+  -ms-transform: translate(-50%, 50%);
+  transform: translate(-50%, 50%);
+  padding: 0;
+  width: 100px;
+  height: 100px;
+  background-color: transparent;
+  color: transparent;
+  z-index: 50;
+}
+
+.gym__play-button:hover {
+  background-color: red;
+}
+
+.section-title {
+  font-family: "AlumniSans-SemiBold", "Arial", sans-serif;
+  font-weight: 600;
+  font-size: 54px;
+  line-height: 65px;
+  letter-spacing: 0.03em;
+  color: #102654;
+}
+
+.section-title--small {
+  font-size: 48px;
+  line-height: 58px;
 }
 
 /* @mixin hover-focus {
