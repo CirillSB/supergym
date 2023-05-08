@@ -1531,28 +1531,33 @@ button,
   -webkit-transform: translate(-50%, 50%);
   -ms-transform: translate(-50%, 50%);
   transform: translate(-50%, 50%);
+  width: 364px;
+  height: 228px;
+  cursor: pointer;
 }
 
-.gym__play-button {
+.gym__video--poster::after {
+  position: relative;
+  content: "";
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url("../img/poster-desktop@1x.jpg");
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+}
+
+.webp-true .gym__video--poster::after {
+  background-image: url("../img/poster-desktop@1x.webp");
+}
+
+.gym__player {
   position: absolute;
-  border: 2px solid;
-  border: linear-gradient(97.05deg, rgba(237, 2, 51, 0.2) 17.6%, rgba(0, 62, 183, 0.2) 95.31%);
   top: 0;
-  left: 50%;
-  border-radius: 50%;
-  -webkit-transform: translate(-50%, 50%);
-  -ms-transform: translate(-50%, 50%);
-  transform: translate(-50%, 50%);
-  padding: 0;
-  width: 100px;
-  height: 100px;
-  background-color: transparent;
-  color: transparent;
-  z-index: 50;
-}
-
-.gym__play-button:hover {
-  background-color: red;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 
 .section-title {
@@ -1669,6 +1674,24 @@ button,
     text-transform: none;
     padding-bottom: 37px;
   }
+
+  .gym__video--poster::after {
+    background-image: url("../img/poster-tablet@1x.jpg");
+  }
+
+  .webp-true .gym__video--poster::after {
+    background-image: url("../img/poster-tablet@1x.webp");
+  }
+}
+
+@media (-webkit-min-device-pixel-ratio: 1.5) and (-webkit-min-device-pixel-ratio: 1.5) and (max-width: 1199px), (-o-min-device-pixel-ratio: 3/2) and (-o-min-device-pixel-ratio: 3/2) and (max-width: 1199px), (min-resolution: 144dpi) and (min-resolution: 144dpi) and (max-width: 1199px), (min-resolution: 144dpi) and (min-resolution: 1.5dppx) and (max-width: 1199px), (min-resolution: 1.5dppx) and (min-resolution: 144dpi) and (max-width: 1199px), (min-resolution: 1.5dppx) and (min-resolution: 1.5dppx) and (max-width: 1199px) {
+  .gym__video--poster::after {
+    background-image: url("../img/poster-tabletp@2x.jpg");
+  }
+
+  .webp-true .gym__video--poster::after {
+    background-image: url("../img/poster-tablet@2x.webp");
+  }
 }
 
 @media (max-width: 767px) {
@@ -1741,6 +1764,14 @@ button,
   .main-title {
     padding-bottom: 24px;
   }
+
+  .gym__video--poster::after {
+    background-image: url("../img/poster-mobile@1x.jpg");
+  }
+
+  .webp-true .gym__video--poster::after {
+    background-image: url("../img/poster-mobile@1x.webp");
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -1806,6 +1837,16 @@ button,
   }
 }
 
+@media (-webkit-min-device-pixel-ratio: 1.5) and (-webkit-min-device-pixel-ratio: 1.5) and (max-width: 767px), (-o-min-device-pixel-ratio: 3/2) and (-o-min-device-pixel-ratio: 3/2) and (max-width: 767px), (min-resolution: 144dpi) and (min-resolution: 144dpi) and (max-width: 767px), (min-resolution: 144dpi) and (min-resolution: 1.5dppx) and (max-width: 767px), (min-resolution: 1.5dppx) and (min-resolution: 144dpi) and (max-width: 767px), (min-resolution: 1.5dppx) and (min-resolution: 1.5dppx) and (max-width: 767px) {
+  .gym__video--poster::after {
+    background-image: url("../img/poster-mobile@2x.jpg");
+  }
+
+  .webp-true .gym__video--poster::after {
+    background-image: url("../img/poster-mobile@2x.webp");
+  }
+}
+
 @media (hover: hover) {
   .btn:hover:not(.focus-visible) {
     opacity: 0.8;
@@ -1817,5 +1858,15 @@ button,
 
   .custom-select__item:hover:not(.focus-visible) {
     background-color: rgba(0, 0, 0, 0.4);
+  }
+}
+
+@media (-webkit-min-device-pixel-ratio: 1.5) and (-webkit-min-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3/2) and (-o-min-device-pixel-ratio: 3/2), (min-resolution: 144dpi) and (min-resolution: 144dpi), (min-resolution: 144dpi) and (min-resolution: 1.5dppx), (min-resolution: 1.5dppx) and (min-resolution: 144dpi), (min-resolution: 1.5dppx) and (min-resolution: 1.5dppx) {
+  .gym__video--poster::after {
+    background-image: url("../img/poster-desktop@2x.jpg");
+  }
+
+  .webp-true .gym__video--poster::after {
+    background-image: url("../img/poster-desktop@2x.webp");
   }
 }
