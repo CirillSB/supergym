@@ -30,18 +30,6 @@ window.addEventListener('DOMContentLoaded', () => {
   });
 
 
-
-
-
-
-
-
-
-
-
-
-
-  
 });
 
 // ---------------------------------
