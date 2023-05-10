@@ -15,6 +15,13 @@
     line-height: 24px;
     color: $color-chambray;
     margin-bottom: 66px;
+        @include tablet {
+    margin-bottom: 65px;
+  }
+
+  @include mobile {
+    
+  }
   }
 
   p {
@@ -25,10 +32,18 @@
     color: $color-egyptian-blue;
     margin: 0 0 35px 0;
     z-index: 100;
+            @include tablet {
+    margin: 0 0 36px 0;
+  }
+
+  @include mobile {
+    
+  }
 
     span {
       color: $color-sapphire;
     }
+
   }
 
   &:hover {
@@ -40,11 +55,14 @@
       background: linear-gradient(97.05deg, $color-torch-red 17.6%, $color-cobalt 95.31%);
       color: $color-default-white;
     }
-
-
-
+  }
+    @include tablet {
+    padding: 53px 108px 59px;
   }
 
+  @include mobile {
+    
+  }
 }
 
 .card__title {

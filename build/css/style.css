@@ -1632,7 +1632,6 @@ button,
   width: 100%;
   margin: 0;
   padding: 0;
-  list-style-type: none;
 }
 
 .gym-membership__card-list {
@@ -1649,7 +1648,12 @@ button,
   gap: 3.4482758621%;
 }
 
+.gym-membership__card-list-item {
+  list-style-type: none;
+}
+
 .gym-membership__list-content {
+  list-style-type: none;
   position: relative;
   top: 0;
   left: 0;
@@ -1927,6 +1931,10 @@ button,
     width: 88.28125%;
   }
 
+  .btn--transparent {
+    padding: 0 0 11px;
+  }
+
   .main-header {
     padding-top: 34px;
   }
@@ -1983,7 +1991,7 @@ button,
   }
 
   .gym::after {
-    height: 80px;
+    height: 83px;
   }
 
   .gym__inner {
@@ -2038,7 +2046,7 @@ button,
   }
 
   .gym__video {
-    bottom: 181px;
+    bottom: 184px;
     left: 50%;
     width: 34.6354166667%;
     height: 167px;
@@ -2052,9 +2060,70 @@ button,
     background-image: url("../img/poster-tablet@1x.webp");
   }
 
-  .section-title--small {
+  .gym-membership {
+    padding: 101px 0 197px;
+    background: url(../img/rogue@1x.png) 121.9% 102%/55% no-repeat, -webkit-gradient(linear, left top, left bottom, color-stop(95%, #f8f9fc), color-stop(95%, rgba(255, 255, 255, 0)));
+    background: url(../img/rogue@1x.png) 121.9% 102%/55% no-repeat, -o-linear-gradient(top, #f8f9fc 95%, rgba(255, 255, 255, 0) 95%);
+    background: url(../img/rogue@1x.png) 121.9% 102%/55% no-repeat, linear-gradient(to bottom, #f8f9fc 95%, rgba(255, 255, 255, 0) 95%);
+  }
+
+  .gym-membership__title {
+    margin: 0 0 20px -13px;
+  }
+
+  .gym-membership__pagination {
+    margin-bottom: 44px;
+  }
+
+  .gym-membership__card-list.is-active {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+
+  .gym-membership__card-list-item {
+    width: 65%;
+    margin-bottom: 40px;
+  }
+
+  .gym-membership__card-list-item:last-child {
+    margin-bottom: 0;
+  }
+
+  .section-title {
     font-size: 42px;
     line-height: 50px;
+  }
+
+  .tabs__controls {
+    gap: 54px;
+  }
+
+  .tabs__control {
+    font-size: 18px;
+    line-height: 27px;
+  }
+
+  .card small {
+    margin-bottom: 65px;
+  }
+
+  .card p {
+    margin: 0 0 36px 0;
+  }
+
+  .card {
+    padding: 53px 108px 59px;
   }
 }
 
@@ -2189,7 +2258,7 @@ button,
     background-image: url("../img/poster-mobile@1x.webp");
   }
 
-  .section-title--small {
+  .section-title {
     font-size: 32px;
     line-height: 38px;
   }

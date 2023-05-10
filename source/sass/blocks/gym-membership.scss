@@ -1,28 +1,25 @@
 .gym-membership {
-	position: relative;
+  position: relative;
   background-color: $color-ghost-white;
   background: url("../img/rogue@1x.png") 120.5% 117.2% / 34.5% no-repeat, linear-gradient(to bottom, $color-ghost-white 92%, $color-transparent 92%);
   padding: 122px 0 197px;
-  // background-image: url("../img/rogue@1x.png");
-  // background-position: 120.5% 145%;
-  // background-size: 34.5%;
-  // background-repeat: no-repeat;
-  // &:after {
-  // 	content: "";
-  // 	display: block;
-  // 	position: absolute;
-  // 	bottom: 0;
-  // 	left: 0;
-  // 	background-color: $color-transparent;
-  // 	width: 100%;
-  // 	height: 1px;
-  // 	z-index: -1;
-  // }
 
+  @include tablet {
+    padding: 101px 0 197px;
+    background: url(../img/rogue@1x.png) 121.9% 102% / 55% no-repeat,linear-gradient(to bottom, $color-ghost-white 95%, $color-transparent 95%)
+  }
+
+  @include mobile {}
 }
 
 .gym-membership__title {
   margin: 0 0 17px -5px;
+
+  @include tablet {
+    margin: 0 0 20px -13px;
+  }
+
+  @include mobile {}
 }
 
 .gym-membership__inner {
@@ -37,6 +34,12 @@
   justify-content: center;
   align-items: flex-start;
   margin-bottom: 40px;
+
+  @include tablet {
+    margin-bottom: 44px;
+  }
+
+  @include mobile {}
 }
 
 .gym-membership__content {
@@ -48,22 +51,51 @@
   width: 100%;
   margin: 0;
   padding: 0;
-  list-style-type: none;
+  // list-style-type: none;
 }
 
 .gym-membership__card-list {
   display: none;
 
   &.is-active {
+    // list-style-type: none;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: auto;
     gap: calc(40 / 1160 * 100%);
 
+    @include tablet {
+      // grid-template-columns: 1fr;
+      // min-height: 100%;
+      // grid-template-rows: repeat(3, auto);
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+    }
+
+    @include mobile {}
+
   }
 }
 
+.gym-membership__card-list-item {
+  list-style-type: none;
+
+  @include tablet {
+    width: 65%;
+    margin-bottom: 40px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  @include mobile {}
+}
+
 .gym-membership__list-content {
+  list-style-type: none;
   position: relative;
   top: 0;
   left: 0;

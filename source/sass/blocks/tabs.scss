@@ -21,6 +21,13 @@
     height: 2px;
     background-color: rgba(120, 120, 120, 0.2);
   }
+      @include tablet {
+  gap: 54px;
+  }
+
+  @include mobile {
+    
+  }
 }
 
 .tabs__control {
@@ -43,6 +50,14 @@
     color: rgba(16, 38, 84, 1);
     border-bottom: 2px solid $color-crimson;
 
+  }
+    @include tablet {
+   font-size: 18px;
+  line-height: 27px;
+  }
+
+  @include mobile {
+    
   }
 }
 
