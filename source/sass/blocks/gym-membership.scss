@@ -1,0 +1,71 @@
+.gym-membership {
+	position: relative;
+  background-color: $color-ghost-white;
+  background: url("../img/rogue@1x.png") 120.5% 117.2% / 34.5% no-repeat, linear-gradient(to bottom, $color-ghost-white 92%, $color-transparent 92%);
+  padding: 122px 0 197px;
+  // background-image: url("../img/rogue@1x.png");
+  // background-position: 120.5% 145%;
+  // background-size: 34.5%;
+  // background-repeat: no-repeat;
+  // &:after {
+  // 	content: "";
+  // 	display: block;
+  // 	position: absolute;
+  // 	bottom: 0;
+  // 	left: 0;
+  // 	background-color: $color-transparent;
+  // 	width: 100%;
+  // 	height: 1px;
+  // 	z-index: -1;
+  // }
+
+}
+
+.gym-membership__title {
+  margin: 0 0 17px -5px;
+}
+
+.gym-membership__inner {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.gym-membership__pagination {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  margin-bottom: 40px;
+}
+
+.gym-membership__content {
+  width: 100%;
+}
+
+.gym-membership__list,
+.gym-membership__card-list {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.gym-membership__card-list {
+  display: none;
+
+  &.is-active {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    gap: calc(40 / 1160 * 100%);
+
+  }
+}
+
+.gym-membership__list-content {
+  position: relative;
+  top: 0;
+  left: 0;
+
+}

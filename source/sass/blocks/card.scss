@@ -1,0 +1,91 @@
+.card {
+  position: relative;
+  background-color: $color-default-white;
+  padding: 51px 67px 59px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  border: 10px solid transparent;
+
+  small {
+    font-family: $ff-roboto-regular;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: $color-chambray;
+    margin-bottom: 66px;
+  }
+
+  p {
+    font-family: $ff-roboto-bold;
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 90px;
+    color: $color-egyptian-blue;
+    margin: 0 0 35px 0;
+    z-index: 100;
+
+    span {
+      color: $color-sapphire;
+    }
+  }
+
+  &:hover {
+    border-image: linear-gradient(97.05deg, $color-torch-red 17.6%, $color-cobalt 95.31%);
+    border-image-slice: 1;
+
+    .card__link {
+      outline: none;
+      background: linear-gradient(97.05deg, $color-torch-red 17.6%, $color-cobalt 95.31%);
+      color: $color-default-white;
+    }
+
+
+
+  }
+
+}
+
+.card__title {
+  font-family: $ff-roboto-bold;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 29px;
+  color: $color-sapphire;
+  margin: 0 0 10px 0;
+}
+
+.card__link {
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  padding: 24px 0;
+  outline: 2px solid $color-sapphire;
+  font-family: $ff-roboto-bold;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+
+  color: $color-sapphire;
+
+  &.focus-visible {
+    outline: none;
+    background: linear-gradient(97.05deg, $color-torch-red 17.6%, $color-cobalt 95.31%);
+    color: $color-default-white;
+  }
+
+}
+
+.card__background {
+  position: absolute;
+  top: 125px;
+  font-family: $ff-roboto-bold;
+  font-weight: 700;
+  font-size: 100px;
+  line-height: 150px;
+  color: $color-whisper;
+  opacity: 0.48;
+}
