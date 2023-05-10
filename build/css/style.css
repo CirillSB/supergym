@@ -665,7 +665,17 @@ button,
 }
 
 .btn--red {
-  background-color: #ff1553;
+  background-color: #ed0233;
+}
+
+.btn--transparent {
+  background-color: rgba(255, 255, 255, 0);
+  color: #102654;
+}
+
+.btn--gradient {
+  background: -o-linear-gradient(352.95deg, #ed0233 17.6%, #003eb7 95.31%);
+  background: linear-gradient(97.05deg, #ed0233 17.6%, #003eb7 95.31%);
 }
 
 .btn:disabled {
@@ -1584,6 +1594,131 @@ button,
   line-height: 58px;
 }
 
+.tabs {
+  max-width: 100%;
+}
+
+.tabs__controls {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 40px;
+}
+
+.tabs__control {
+  text-transform: uppercase;
+  cursor: pointer;
+  margin: 0 20px;
+  opacity: 0.5;
+  min-width: auto;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.tabs__control.is-active {
+  opacity: 1;
+  pointer-events: none;
+}
+
+.tabs__content {
+  margin-bottom: 40px;
+  -webkit-transition: height 0.3s;
+  -o-transition: height 0.3s;
+  transition: height 0.3s;
+}
+
+.tabs__element {
+  padding: 25px;
+  width: 100%;
+}
+
+.tabs__element p {
+  margin: 0;
+}
+
+.tabs__element p:not(:last-child) {
+  margin: 0 0 20px 0;
+}
+
+.tabs__element:nth-child(1) {
+  background-color: rgb(250, 235, 215);
+}
+
+.tabs__element:nth-child(2) {
+  background-color: rgb(229, 250, 215);
+}
+
+.tabs__element:nth-child(3) {
+  background-color: rgb(180, 188, 233);
+}
+
+.tabs__element:nth-child(4) {
+  background-color: rgb(255, 187, 204);
+}
+
+.tabs--unset .tabs__content {
+  height: 100px;
+}
+
+.tabs--unset .tabs__element {
+  height: 100%;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+[data-tabs=parent] {
+  overflow: hidden;
+}
+
+[data-tabs=parent].no-transition > [data-tabs=control],
+[data-tabs=parent].no-transition > [data-tabs=content],
+[data-tabs=parent].no-transition > [data-tabs=element] {
+  -webkit-transition: none;
+  -o-transition: none;
+  transition: none;
+}
+
+[data-tabs=parent].no-transition-global [data-tabs=control],
+[data-tabs=parent].no-transition-global [data-tabs=content],
+[data-tabs=parent].no-transition-global [data-tabs=element] {
+  -webkit-transition: none;
+  -o-transition: none;
+  transition: none;
+}
+
+[data-tabs=parent] [data-tabs=content] {
+  position: relative;
+}
+
+[data-tabs=element] {
+  position: absolute;
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: opacity 0.3s ease-in, visibility 0.3s ease-in;
+  -o-transition: opacity 0.3s ease-in, visibility 0.3s ease-in;
+  transition: opacity 0.3s ease-in, visibility 0.3s ease-in;
+}
+
+[data-tabs=element].for-load {
+  position: static;
+  visibility: visible;
+  opacity: 1;
+  -webkit-transition: none;
+  -o-transition: none;
+  transition: none;
+}
+
+[data-tabs=element].is-active {
+  z-index: 1;
+  visibility: visible;
+  opacity: 1;
+}
+
 /* @mixin hover-focus {
     @media (hover: hover) {
       &:hover:not(.focus-visible) {
@@ -1768,6 +1903,13 @@ button,
 
   .webp-true .gym__video--poster::after {
     background-image: url("../img/poster-tablet@2x.webp");
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .tabs__control {
+    margin: 0 10px;
+    padding: 15px;
   }
 }
 
@@ -1958,6 +2100,21 @@ button,
     -webkit-transform: translateY(calc(-50% - 5px));
     -ms-transform: translateY(calc(-50% - 5px));
     transform: translateY(calc(-50% - 5px));
+  }
+
+  .tabs__controls {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+  }
+
+  .tabs__control {
+    margin: 10px 2% 0;
+    padding: 10px;
+    width: 45%;
+  }
+
+  .tabs__element {
+    padding: 15px;
   }
 }
 
