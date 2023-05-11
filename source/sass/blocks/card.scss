@@ -15,16 +15,18 @@
     line-height: 24px;
     color: $color-chambray;
     margin-bottom: 66px;
-        @include tablet {
-    margin-bottom: 65px;
-  }
 
-  @include mobile {
-    
-  }
+    @include tablet {
+      margin-bottom: 65px;
+    }
+
+    @include mobile {
+      margin-bottom: 54px;
+    }
   }
 
   p {
+    // position: relative;
     font-family: $ff-roboto-bold;
     font-weight: 700;
     font-size: 60px;
@@ -32,18 +34,23 @@
     color: $color-egyptian-blue;
     margin: 0 0 35px 0;
     z-index: 100;
-            @include tablet {
-    margin: 0 0 36px 0;
-  }
 
-  @include mobile {
-    
-  }
-
-    span {
-      color: $color-sapphire;
+    @include tablet {
+      margin: 0 0 36px 6px;
     }
 
+    @include mobile {
+      font-size: 48px;
+      line-height: 72px;
+      margin: 0 0 32px 15px;
+    }
+
+    span {
+      position: relative;
+      left: -3px;
+      display: inline-block;
+      color: $color-sapphire;
+    }
   }
 
   &:hover {
@@ -56,12 +63,13 @@
       color: $color-default-white;
     }
   }
-    @include tablet {
+
+  @include tablet {
     padding: 53px 108px 59px;
   }
 
   @include mobile {
-    
+    padding: 41px 35px 41px;
   }
 }
 
@@ -72,6 +80,12 @@
   line-height: 29px;
   color: $color-sapphire;
   margin: 0 0 10px 0;
+
+  @include mobile {
+    font-size: 22px;
+    line-height: 24px;
+    margin: 0 0 9px 0;
+  }
 }
 
 .card__link {
@@ -86,7 +100,6 @@
   line-height: 14px;
   letter-spacing: 0.05em;
   text-transform: uppercase;
-
   color: $color-sapphire;
 
   &.focus-visible {
@@ -94,7 +107,6 @@
     background: linear-gradient(97.05deg, $color-torch-red 17.6%, $color-cobalt 95.31%);
     color: $color-default-white;
   }
-
 }
 
 .card__background {
@@ -106,4 +118,10 @@
   line-height: 150px;
   color: $color-whisper;
   opacity: 0.48;
+
+  @include mobile {
+    top: 108px;
+    font-size: 80px;
+    line-height: 120px;
+  }
 }

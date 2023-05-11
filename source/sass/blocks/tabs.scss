@@ -12,7 +12,7 @@
   margin: 0;
   padding: 0;
 
-  &:after {
+  &::after {
     content: "";
     position: absolute;
     bottom: 0;
@@ -21,12 +21,13 @@
     height: 2px;
     background-color: rgba(120, 120, 120, 0.2);
   }
-      @include tablet {
-  gap: 54px;
+
+  @include tablet {
+    gap: 54px;
   }
 
   @include mobile {
-    
+    gap: 46px;
   }
 }
 
@@ -45,31 +46,25 @@
   }
 
   &.is-active {
-    // opacity: 1;
     pointer-events: none;
     color: rgba(16, 38, 84, 1);
     border-bottom: 2px solid $color-crimson;
-
   }
-    @include tablet {
-   font-size: 18px;
-  line-height: 27px;
+
+  @include tablet {
+    font-size: 18px;
+    line-height: 27px;
   }
 
   @include mobile {
-    
+    font-size: 16px;
+    line-height: 24px;
   }
 }
 
 .tabs__content {
   margin-bottom: 40px;
   transition: height 0.3s;
-}
-
-.tabs__element {
-  // padding: 25px;
-  // width: 100%;
-
 }
 
 .tabs--unset .tabs__content {

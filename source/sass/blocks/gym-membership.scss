@@ -1,15 +1,18 @@
 .gym-membership {
   position: relative;
-  background-color: $color-ghost-white;
+  // background-color: $color-ghost-white;
   background: url("../img/rogue@1x.png") 120.5% 117.2% / 34.5% no-repeat, linear-gradient(to bottom, $color-ghost-white 92%, $color-transparent 92%);
   padding: 122px 0 197px;
 
   @include tablet {
     padding: 101px 0 197px;
-    background: url(../img/rogue@1x.png) 121.9% 102% / 55% no-repeat,linear-gradient(to bottom, $color-ghost-white 95%, $color-transparent 95%)
+    background: url("../img/rogue@1x.png") 121.9% 102% / 55% no-repeat, linear-gradient(to bottom, $color-ghost-white 95%, $color-transparent 95%);
   }
 
-  @include mobile {}
+  @include mobile {
+    background: linear-gradient(to bottom, $color-ghost-white 95%, $color-transparent 95%);
+    padding: 64px 0 153px;
+  }
 }
 
 .gym-membership__title {
@@ -18,8 +21,6 @@
   @include tablet {
     margin: 0 0 20px -13px;
   }
-
-  @include mobile {}
 }
 
 .gym-membership__inner {
@@ -39,7 +40,9 @@
     margin-bottom: 44px;
   }
 
-  @include mobile {}
+  @include mobile {
+    margin-bottom: 34px;
+  }
 }
 
 .gym-membership__content {
@@ -51,31 +54,23 @@
   width: 100%;
   margin: 0;
   padding: 0;
-  // list-style-type: none;
 }
 
 .gym-membership__card-list {
   display: none;
 
   &.is-active {
-    // list-style-type: none;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: auto;
     gap: calc(40 / 1160 * 100%);
 
     @include tablet {
-      // grid-template-columns: 1fr;
-      // min-height: 100%;
-      // grid-template-rows: repeat(3, auto);
       display: flex;
       flex-direction: column;
       justify-content: flex-start;
       align-items: center;
     }
-
-    @include mobile {}
-
   }
 }
 
@@ -91,7 +86,9 @@
     }
   }
 
-  @include mobile {}
+  @include mobile {
+    width: 100%;
+  }
 }
 
 .gym-membership__list-content {
@@ -99,5 +96,4 @@
   position: relative;
   top: 0;
   left: 0;
-
 }

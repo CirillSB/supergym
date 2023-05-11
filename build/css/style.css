@@ -1482,7 +1482,7 @@ button,
   -webkit-box-align: start;
   -ms-flex-align: start;
   align-items: flex-start;
-  padding: 120px 0 100px;
+  padding: 120px 7.5402635432% 100px;
 }
 
 .gym__description {
@@ -1827,6 +1827,9 @@ button,
 }
 
 .card p span {
+  position: relative;
+  left: -3px;
+  display: inline-block;
   color: #102654;
 }
 
@@ -2019,7 +2022,7 @@ button,
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    padding: 0 80px 36px;
+    padding: 0 12.2395833333% 36px;
     text-align: center;
   }
 
@@ -2041,6 +2044,7 @@ button,
 
   .gym__banner {
     width: 100%;
+    padding: 0 5.859375%;
     -ms-flex-negative: 1;
     flex-shrink: 1;
   }
@@ -2062,9 +2066,9 @@ button,
 
   .gym-membership {
     padding: 101px 0 197px;
-    background: url(../img/rogue@1x.png) 121.9% 102%/55% no-repeat, -webkit-gradient(linear, left top, left bottom, color-stop(95%, #f8f9fc), color-stop(95%, rgba(255, 255, 255, 0)));
-    background: url(../img/rogue@1x.png) 121.9% 102%/55% no-repeat, -o-linear-gradient(top, #f8f9fc 95%, rgba(255, 255, 255, 0) 95%);
-    background: url(../img/rogue@1x.png) 121.9% 102%/55% no-repeat, linear-gradient(to bottom, #f8f9fc 95%, rgba(255, 255, 255, 0) 95%);
+    background: url("../img/rogue@1x.png") 121.9% 102%/55% no-repeat, -webkit-gradient(linear, left top, left bottom, color-stop(95%, #f8f9fc), color-stop(95%, rgba(255, 255, 255, 0)));
+    background: url("../img/rogue@1x.png") 121.9% 102%/55% no-repeat, -o-linear-gradient(top, #f8f9fc 95%, rgba(255, 255, 255, 0) 95%);
+    background: url("../img/rogue@1x.png") 121.9% 102%/55% no-repeat, linear-gradient(to bottom, #f8f9fc 95%, rgba(255, 255, 255, 0) 95%);
   }
 
   .gym-membership__title {
@@ -2119,7 +2123,7 @@ button,
   }
 
   .card p {
-    margin: 0 0 36px 0;
+    margin: 0 0 36px 6px;
   }
 
   .card {
@@ -2140,6 +2144,10 @@ button,
 @media (max-width: 767px) {
   .container {
     width: 91.875%;
+  }
+
+  .btn--transparent {
+    padding: 0 0 13px;
   }
 
   .modal__wrapper {
@@ -2213,18 +2221,18 @@ button,
   }
 
   .gym__inner {
-    padding: 64px 0 100px 2px;
+    padding: 64px 0 110px;
   }
 
   .gym__description {
     -webkit-box-align: start;
     -ms-flex-align: start;
     align-items: flex-start;
-    padding: 0;
+    padding: 0 13px;
   }
 
   .gym__description b {
-    margin: 0 0 24px 0;
+    margin: 0 0 24px 2px;
   }
 
   .gym__description p {
@@ -2234,14 +2242,12 @@ button,
   }
 
   .gym__title {
-    margin: 0 0 5px 0;
+    margin: 0 0 5px 2px;
   }
 
   .gym__banner {
-    position: relative;
-    left: -15px;
-    width: 100vw;
     height: auto;
+    padding: 0;
   }
 
   .gym__video {
@@ -2258,9 +2264,59 @@ button,
     background-image: url("../img/poster-mobile@1x.webp");
   }
 
+  .gym-membership {
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(95%, #f8f9fc), color-stop(95%, rgba(255, 255, 255, 0)));
+    background: -o-linear-gradient(top, #f8f9fc 95%, rgba(255, 255, 255, 0) 95%);
+    background: linear-gradient(to bottom, #f8f9fc 95%, rgba(255, 255, 255, 0) 95%);
+    padding: 64px 0 153px;
+  }
+
+  .gym-membership__pagination {
+    margin-bottom: 34px;
+  }
+
+  .gym-membership__card-list-item {
+    width: 100%;
+  }
+
   .section-title {
     font-size: 32px;
     line-height: 38px;
+  }
+
+  .tabs__controls {
+    gap: 46px;
+  }
+
+  .tabs__control {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .card small {
+    margin-bottom: 54px;
+  }
+
+  .card p {
+    font-size: 48px;
+    line-height: 72px;
+    margin: 0 0 32px 15px;
+  }
+
+  .card {
+    padding: 41px 35px 41px;
+  }
+
+  .card__title {
+    font-size: 22px;
+    line-height: 24px;
+    margin: 0 0 9px 0;
+  }
+
+  .card__background {
+    top: 108px;
+    font-size: 80px;
+    line-height: 120px;
   }
 }
 
