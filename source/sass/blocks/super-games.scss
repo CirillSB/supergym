@@ -4,10 +4,28 @@
   align-items: flex-start;
   padding: 43px 0;
 
-  @include tablet {}
+  @include tablet {
+    padding: 3px 0 43px;
+  }
 
-  @include mobile {}
+  @include mobile {
+    flex-direction: column;
+    padding: 0 2px 43px;
+  }
 }
+
 .super-games__promo {
-	width: calc(500 / 1160 * 100%);
+  width: calc(500 / 1160 * 100%);
+
+  @include mobile {
+    width: 100%;
+  }
+}
+
+.super-games__image {
+  width: calc(660 / 1160 * 100%);
+
+  @include mobile {
+    width: 100%;
+  }
 }

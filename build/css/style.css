@@ -1904,6 +1904,10 @@ button,
   width: 43.1034482759%;
 }
 
+.super-games__image {
+  width: 56.8965517241%;
+}
+
 .games-promo-date {
   background-color: #ed0233;
   color: #ffffff;
@@ -1924,7 +1928,7 @@ button,
   -webkit-box-align: start;
   -ms-flex-align: start;
   align-items: flex-start;
-  margin-bottom: 9px;
+  margin-bottom: 2px;
 }
 
 .games-promo-date__inner {
@@ -2308,6 +2312,68 @@ button,
   .card {
     padding: 53px 108px 59px;
   }
+
+  .super-games__inner {
+    padding: 3px 0 43px;
+  }
+
+  .games-promo-date {
+    padding: 47px 44px 50px;
+  }
+
+  .games-promo-date__inner {
+    padding-left: 4px;
+  }
+
+  .games-promo-date__bunner {
+    font-size: 48px;
+    line-height: 46px;
+    padding: 4px 0 0 7px;
+  }
+
+  .games-promo-date__description-wrapper {
+    padding-right: 2px;
+  }
+
+  .games-promo-date__description dt::after {
+    bottom: -2px;
+  }
+
+  .games-promo-date__description dt {
+    font-size: 12px;
+    line-height: 18px;
+  }
+
+  .games-promo-date__description {
+    margin: 0;
+  }
+
+  .games-promo-date__title {
+    font-size: 12px;
+    line-height: 18px;
+    margin: 0 0 30px 0;
+  }
+
+  .games-promo-date__link {
+    font-size: 13px;
+    line-height: 12px;
+    padding: 10px 0 11px;
+  }
+
+  .games-promo-date__number {
+    font-size: 24px;
+    line-height: 34px;
+  }
+
+  .games-promo-date__month {
+    font-size: 10px;
+    line-height: 15px;
+  }
+
+  .games-promo-date_year {
+    font-size: 10px;
+    line-height: 15px;
+  }
 }
 
 @media (-webkit-min-device-pixel-ratio: 1.5) and (-webkit-min-device-pixel-ratio: 1.5) and (max-width: 1199px), (-o-min-device-pixel-ratio: 3/2) and (-o-min-device-pixel-ratio: 3/2) and (max-width: 1199px), (min-resolution: 144dpi) and (min-resolution: 144dpi) and (max-width: 1199px), (min-resolution: 144dpi) and (min-resolution: 1.5dppx) and (max-width: 1199px), (min-resolution: 1.5dppx) and (min-resolution: 144dpi) and (max-width: 1199px), (min-resolution: 1.5dppx) and (min-resolution: 1.5dppx) and (max-width: 1199px) {
@@ -2447,7 +2513,7 @@ button,
     background: -webkit-gradient(linear, left top, left bottom, color-stop(95%, #f8f9fc), color-stop(95%, rgba(255, 255, 255, 0)));
     background: -o-linear-gradient(top, #f8f9fc 95%, rgba(255, 255, 255, 0) 95%);
     background: linear-gradient(to bottom, #f8f9fc 95%, rgba(255, 255, 255, 0) 95%);
-    padding: 64px 0 153px;
+    padding: 64px 0 145px;
   }
 
   .gym-membership__pagination {
@@ -2479,7 +2545,7 @@ button,
   .card p {
     font-size: 48px;
     line-height: 72px;
-    margin: 0 0 32px 15px;
+    margin: 0 0 32px 8px;
   }
 
   .card {
@@ -2496,6 +2562,31 @@ button,
     top: 108px;
     font-size: 80px;
     line-height: 120px;
+  }
+
+  .super-games__inner {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    padding: 0 2px 43px;
+  }
+
+  .super-games__promo {
+    width: 100%;
+  }
+
+  .super-games__image {
+    width: 100%;
+  }
+
+  .games-promo-date__description-wrapper {
+    padding-right: 1px;
+  }
+
+  .games-promo-date__link {
+    border-width: 2px;
+    padding: 12px 0 13px;
   }
 }
 

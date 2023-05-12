@@ -1,6 +1,5 @@
 .gym-membership {
   position: relative;
-  // background-color: $color-ghost-white;
   background: url("../img/rogue@1x.png") 120.5% 117.2% / 34.5% no-repeat, linear-gradient(to bottom, $color-ghost-white 92%, $color-transparent 92%);
   padding: 122px 0 197px;
 
@@ -11,7 +10,7 @@
 
   @include mobile {
     background: linear-gradient(to bottom, $color-ghost-white 95%, $color-transparent 95%);
-    padding: 64px 0 153px;
+    padding: 64px 0 145px;
   }
 }
 
