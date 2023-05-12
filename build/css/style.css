@@ -1583,7 +1583,6 @@ button,
 
 .gym-membership {
   position: relative;
-  background-color: #f8f9fc;
   background: url("../img/rogue@1x.png") 120.5% 117.2%/34.5% no-repeat, -webkit-gradient(linear, left top, left bottom, color-stop(92%, #f8f9fc), color-stop(92%, rgba(255, 255, 255, 0)));
   background: url("../img/rogue@1x.png") 120.5% 117.2%/34.5% no-repeat, -o-linear-gradient(top, #f8f9fc 92%, rgba(255, 255, 255, 0) 92%);
   background: url("../img/rogue@1x.png") 120.5% 117.2%/34.5% no-repeat, linear-gradient(to bottom, #f8f9fc 92%, rgba(255, 255, 255, 0) 92%);
@@ -1691,7 +1690,7 @@ button,
   padding: 0;
 }
 
-.tabs__controls:after {
+.tabs__controls::after {
   content: "";
   position: absolute;
   bottom: 0;
@@ -1886,6 +1885,186 @@ button,
   line-height: 150px;
   color: #e8e8e8;
   opacity: 0.48;
+}
+
+.super-games__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  padding: 43px 0;
+}
+
+.super-games__promo {
+  width: 43.1034482759%;
+}
+
+.games-promo-date {
+  background-color: #ed0233;
+  color: #ffffff;
+  padding: 81px 77px 85px 76px;
+  font-family: "RobotoCondensed-Regular", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+}
+
+.games-promo-date__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  margin-bottom: 9px;
+}
+
+.games-promo-date__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  padding-left: 5px;
+}
+
+.games-promo-date__bunner {
+  font-family: "AlumniSans-SemiBold", "Arial", sans-serif;
+  font-weight: 600;
+  font-size: 82px;
+  line-height: 79px;
+  letter-spacing: 0.03em;
+  text-align: center;
+  text-transform: uppercase;
+  margin: 0;
+  padding: 4px 0 0 11px;
+}
+
+.games-promo-date__description-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+}
+
+.games-promo-date__description {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  margin: 0 0 8px 0;
+}
+
+.games-promo-date__description:last-child {
+  margin: 0;
+}
+
+.games-promo-date__description dt {
+  position: relative;
+  font-family: "RobotoCondensed-Regular", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 27px;
+}
+
+.games-promo-date__description dt::after {
+  position: absolute;
+  content: "";
+  bottom: -5px;
+  left: -2px;
+  height: 1px;
+  width: 180%;
+  background-color: #ffffff;
+}
+
+.games-promo-date__description dd {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin: 0;
+}
+
+.games-promo-date__title {
+  font-family: "RobotoCondensed-Regular", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 27px;
+  margin: 0 0 45px 0;
+}
+
+.games-promo-date__link {
+  display: inline-block;
+  font-family: "RobotoCondensed-Regular", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 27px;
+  text-align: center;
+  color: #ffffff;
+  border: 4px solid #ffffff;
+  width: 100%;
+  padding: 16px 0 20px;
+}
+
+.games-promo-date__number {
+  display: inline-block;
+  font-family: "RobotoCondensed-Bold", "Arial", sans-serif;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 60px;
+}
+
+.games-promo-date__month {
+  font-family: "RobotoCondensed-Regular", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+}
+
+.games-promo-date_year {
+  font-family: "RobotoCondensed-Regular", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
 }
 
 /* @mixin hover-focus {

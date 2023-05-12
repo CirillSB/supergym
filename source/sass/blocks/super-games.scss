@@ -1,0 +1,13 @@
+.super-games__inner {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 43px 0;
+
+  @include tablet {}
+
+  @include mobile {}
+}
+.super-games__promo {
+	width: calc(500 / 1160 * 100%);
+}
