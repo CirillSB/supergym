@@ -2,7 +2,7 @@
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
-  padding: 43px 0;
+  padding: 43px 0 107px;
 
   @include tablet {
     padding: 3px 0 43px;
@@ -28,4 +28,7 @@
   @include mobile {
     width: 100%;
   }
+}
+.super-games__picture {
+  height: 100%;
 }
