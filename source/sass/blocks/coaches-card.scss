@@ -4,15 +4,12 @@
   left: 0;
   width: 100%;
   height: 100%;
-  transition: all 10s ease 0s;
+  transition: all 0.3s ease 0s;
   background: rgba(16, 38, 84, 0.89);
   color: $color-default-white;
   padding: 52px 2px;
-
-  &--hidden {
-    visibility: hidden;
-    opacity: 0;
-  }
+  visibility: hidden;
+  opacity: 0;
 }
 
 .coaches-card__content {
@@ -29,7 +26,6 @@
     line-height: 24px;
     color: $color-spindle;
   }
-
 }
 
 .coaches-card__title {

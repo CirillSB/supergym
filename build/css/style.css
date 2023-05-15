@@ -3012,6 +3012,15 @@ button,
   background-color: #c3c8d4;
 }
 
+.slider__nested-list-item:hover .coaches-card {
+  visibility: visible;
+  opacity: 1;
+}
+
+.slider__nested-list-item:hover p {
+  display: none;
+}
+
 .slider__nested-list-item p {
   position: absolute;
   bottom: 22px;
@@ -3045,15 +3054,12 @@ button,
   left: 0;
   width: 100%;
   height: 100%;
-  -webkit-transition: all 10s ease 0s;
-  -o-transition: all 10s ease 0s;
-  transition: all 10s ease 0s;
+  -webkit-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
   background: rgba(16, 38, 84, 0.89);
   color: #ffffff;
   padding: 52px 2px;
-}
-
-.coaches-card--hidden {
   visibility: hidden;
   opacity: 0;
 }
@@ -3107,6 +3113,10 @@ button,
 
 .coaches-card__item:last-child {
   margin-bottom: 0;
+}
+
+.hidden {
+  display: none;
 }
 
 /* @mixin hover-focus {

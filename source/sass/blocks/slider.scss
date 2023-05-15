@@ -18,8 +18,9 @@
 .slider__picture {
   width: 100%;
 }
+
 .slider__image {
-	width: 100%;
+  width: 100%;
 }
 
 .slider__nested-list {
@@ -38,6 +39,17 @@
   width: calc(260 / 1158 * 100%);
   background-color: $color-link-water;
 
+  &:hover {
+    .coaches-card {
+      visibility: visible;
+      opacity: 1;
+    }
+
+    p {
+      display: none;
+    }
+  }
+
   p {
     position: absolute;
     bottom: 22px;
@@ -53,12 +65,13 @@
     color: $color-default-white;
   }
 }
+
 .slider__button {
-	top: 0;
-	padding: 0;
-	width: calc(89 / 1366 * 100%);
-	background-color: transparent;
-	height: 100%;
-	border: none;
-	margin: 0;
+  top: 0;
+  padding: 0;
+  width: calc(89 / 1366 * 100%);
+  background-color: transparent;
+  height: 100%;
+  border: none;
+  margin: 0;
 }

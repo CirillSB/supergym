@@ -1,12 +1,27 @@
-import {iosVhFix} from './utils/ios-vh-fix';
-import {initModals} from './modules/modals/init-modals';
-import {Form} from './modules/form-validate/form';
-import {initPlayer} from './modules/initPlayer';
+import {
+  iosVhFix
+} from './utils/ios-vh-fix';
+import {
+  initModals
+} from './modules/modals/init-modals';
+import {
+  Form
+} from './modules/form-validate/form';
+import {
+  initPlayer
+} from './modules/initPlayer';
 import {
   testWebP
 } from './utils/test-webp';
-import {initTabs} from './modules/init-tabs';
-import {Tabs} from './modules/tabs';
+import {
+  initTabs
+} from './modules/init-tabs';
+// import {
+//   Tabs
+// } from './modules/tabs';
+import {
+  initCoachersCards
+} from './modules/init-coachers-cards';
 
 // ---------------------------------
 
@@ -30,9 +45,8 @@ window.addEventListener('DOMContentLoaded', () => {
     window.form = form;
     form.init();
     initPlayer();
+    initCoachersCards();
   });
-
-
 });
 
 // ---------------------------------
