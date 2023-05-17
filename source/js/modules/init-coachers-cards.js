@@ -1,8 +1,8 @@
 export const initCoachersCards = () => {
   const image = document.querySelectorAll('.slider__image');
-  const canvas = document.querySelector('.coaches');
-  const cards = document.querySelectorAll('.slider__nested-list-item');
-  const title = document.querySelectorAll('.slider__nested-list-item p');
+  const canvas = document.querySelector('body');
+  const cards = document.querySelectorAll('.slider__item');
+  const title = document.querySelectorAll('.slider__item p');
   const cardsDescriptions = document.querySelectorAll('.coaches-card');
 
   const hideCardsDescriptions = () => {

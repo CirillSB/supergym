@@ -1,5 +1,3 @@
-.slider {}
-
 .slider__wrapper {
   position: relative;
   display: flex;
@@ -9,41 +7,31 @@
 
 .slider__inner {
   position: relative;
-
-  width: calc(1164 / 1366 * 100%);
+  display: flex;
+  justify-content: center;
+  width: 1164px;
 
   @include tablet {
-    width: calc(567 / 768 * 100%);
+    width: 567px;
   }
 
   @include mobile {
-    width: calc(226 / 320 * 100%);
+    width: 226px;
   }
 }
 
 .slider__list {
   margin: 0;
-
   padding: 0;
   list-style-type: none;
-
-  @include tablet {}
-
-  @include mobile {}
 }
 
 .slider__item {
   position: relative;
 
-
   @include tablet {
-    // width: calc(268 / 100 * 100vw);
     width: 268px;
-    // margin-right: 1%;
-    object-fit: cover;
   }
-
-  @include mobile {}
 
   &:hover {
     .coaches-card {
@@ -74,25 +62,10 @@
 
 .slider__picture {
   display: block;
-
-  @include tablet {
-    // width: 100%;
-    object-fit: cover;
-  }
-
-  @include mobile {}
 }
 
 .slider__image {
-
-  @include tablet {
-    // height: 100%;
-    // width: 100%;
-
-    // object-fit: cover;
-  }
-
-  @include mobile {}
+  width: 100%;
 }
 
 .slider__button-wrapper {
@@ -131,8 +104,4 @@
       left: -38%;
     }
   }
-
-  @include tablet {}
-
-  @include mobile {}
 }

@@ -2969,7 +2969,13 @@ button,
 
 .slider__inner {
   position: relative;
-  width: 85.2122986823%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 1164px;
 }
 
 .slider__list {
@@ -3010,6 +3016,10 @@ button,
 
 .slider__picture {
   display: block;
+}
+
+.slider__image {
+  width: 100%;
 }
 
 .slider__button-wrapper {
@@ -3419,18 +3429,11 @@ button,
   }
 
   .slider__inner {
-    width: 73.828125%;
+    width: 567px;
   }
 
   .slider__item {
     width: 268px;
-    -o-object-fit: cover;
-    object-fit: cover;
-  }
-
-  .slider__picture {
-    -o-object-fit: cover;
-    object-fit: cover;
   }
 
   .slider__button--prev {
@@ -3664,7 +3667,7 @@ button,
   }
 
   .slider__inner {
-    width: 70.625%;
+    width: 226px;
   }
 
   .slider__button--prev {
