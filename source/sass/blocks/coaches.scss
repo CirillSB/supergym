@@ -1,12 +1,33 @@
 .coaches {
-  padding-bottom: 140px;
+  padding: 0 0 140px 0;
+
+  @include tablet {
+    padding: 51px 0 140px;
+  }
+
+  @include mobile {
+    padding: 14px 0 140px;
+  }
+}
+
+.coaches__inner {
+  padding: 0 7%;
 }
 
 .coaches__title {
   margin: 0 0 48px;
+
+  @include tablet {
+    margin: 0 6px 31px 0;
+    text-align: center;
+  }
+
+  @include mobile {
+    margin: 0 5px 42px 0;
+  }
 }
 
 .coaches__slider {
-  display: flex;
-  justify-content: space-between;
+  // width: 73%;
+  // margin: 0 auto;
 }

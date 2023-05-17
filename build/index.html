@@ -381,20 +381,24 @@
             Тренеры
           </h2>
         </div>
-        <div class="coaches__slider slider swiper">
-          <button class="slider__button slider__button--prev swiper-button-prev">
-          </button>
-          <ul class="slider__list swiper-wrapper">
-            <li class="slider__item swiper-slide">
-              <ul class="slider__nested-list">
-                <li class="slider__nested-list-item">
+        <div class="coaches__slider slider">
+          <div class="slider__wrapper">
+            <div class="slider__button-wrapper">
+              <button class="slider__button slider__button--prev swiper-button-prev" type="button"></button>
+            </div>
+            <div class="slider__inner swiper">
+              <ul class="slider__list swiper-wrapper">
+                <li class="slider__item swiper-slide">
                   <picture class="slider__picture">
-                    <source type="image/webp" srcset="img/Anna@1x.webp 1x, img/Anna@2x.webp 2x">
-                    <source srcset="img/Anna@1x.jpg 1x, img/Anna@2x.jpg 2x">
-                    <img class="slider__image" loading="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAACCAQAAAA3fa6RAAAADklEQVR42mNkAANGCAUAACMAA2w/AMgAAAAASUVORK5CYII=" data-src="img/Anna@1x.jpg" srcset="img/Anna@2x.jpg 2x" width="260" height="294" alt="Тренер Анна Павлова.">
+                    <source type="image/webp" media="(min-width: 1200px)" srcset="img/Anna-desktop@1x.webp 1x, img/Anna-desktop@2x.webp 2x">
+                    <source type="image/webp" media="(min-width: 768px)" srcset="img/Anna-tablet@1x.webp 1x, img/Anna-tablet@2x.webp 2x">
+                    <source type="image/webp" srcset="img/Anna-mobile@1x.webp 1x, img/Anna-mobile@2x.webp 2x">
+                    <source media="(min-width: 1200px)" srcset="img/Anna-desktop@1x.jpg 1x, img/Anna-desktop@2x.jpg 2x">
+                    <source media="(min-width: 768px)" srcset="img/Anna-tablet@1x.jpg 1x, img/Anna-tablet@2x.jpg 2x">
+                    <img class="slider__image" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAACCAQAAAA3fa6RAAAADklEQVR42mNkAANGCAUAACMAA2w/AMgAAAAASUVORK5CYII=" data-src="img/games-mobile@1x.jpg" srcset="img/Anna-mobile@2x.jpg 2x" width="226" height="274" alt="Тренер Анна Павлова.">
                   </picture>
                   <noscript>
-                    <img src="img/Anna@1x.jpg" width="260" height="294" alt="Тренер Анна Павлова.">
+                    <img src="img/Anna-mobile@1x.jpg" width="226" height="274" alt="Тренер Анна Павлова.">
                   </noscript>
                   <p>
                     Анна Павлова
@@ -421,14 +425,17 @@
                     </div>
                   </section>
                 </li>
-                <li class="slider__nested-list-item">
+                <li class="slider__item swiper-slide">
                   <picture class="slider__picture">
-                    <source type="image/webp" srcset="img/Alexey@1x.webp 1x, img/Alexey@2x.webp 2x">
-                    <source srcset="img/Alexey@1x.jpg 1x, img/Alexey@2x.jpg 2x">
-                    <img class="slider__image" loading="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAACCAQAAAA3fa6RAAAADklEQVR42mNkAANGCAUAACMAA2w/AMgAAAAASUVORK5CYII=" data-src="img/Alexey@1x.jpg" srcset="img/Alexey@2x.jpg 2x" width="260" height="294" alt="Тренер Алексей Лавров.">
+                    <source type="image/webp" media="(min-width: 1200px)" srcset="img/Alexey-desktop@1x.webp 1x, img/Alexey-desktop@2x.webp 2x">
+                    <source type="image/webp" media="(min-width: 768px)" srcset="img/Alexey-tablet@1x.webp 1x, img/Alexey-tablet@2x.webp 2x">
+                    <source type="image/webp" srcset="img/Alexey-mobile@1x.webp 1x, img/Alexey-mobile@2x.webp 2x">
+                    <source media="(min-width: 1200px)" srcset="img/Alexey-desktop@1x.jpg 1x, img/Alexey-desktop@2x.jpg 2x">
+                    <source media="(min-width: 768px)" srcset="img/Alexey-tablet@1x.jpg 1x, img/Alexey-tablet@2x.jpg 2x">
+                    <img class="slider__image" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAACCAQAAAA3fa6RAAAADklEQVR42mNkAANGCAUAACMAA2w/AMgAAAAASUVORK5CYII=" data-src="img/games-mobile@1x.jpg" srcset="img/Alexey-mobile@2x.jpg 2x" width="226" height="274" alt="Тренер Алексей Лавров.">
                   </picture>
                   <noscript>
-                    <img src="img/Alexey@1x.jpg" width="260" height="294" alt="Тренер Алексей Лавров.">
+                    <img src="img/Alexey-mobile@1x.jpg" width="226" height="274" alt="Тренер Алексей Лавров.">
                   </noscript>
                   <p>
                     Алексей Лавров
@@ -455,14 +462,17 @@
                     </div>
                   </section>
                 </li>
-                <li class="slider__nested-list-item">
+                <li class="slider__item swiper-slide">
                   <picture class="slider__picture">
-                    <source type="image/webp" srcset="img/Alexandr@1x.webp 1x, img/Alexandr@2x.webp 2x">
-                    <source srcset="img/Alexandr@1x.jpg 1x, img/Alexandr@2x.jpg 2x">
-                    <img class="slider__image" loading="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAACCAQAAAA3fa6RAAAADklEQVR42mNkAANGCAUAACMAA2w/AMgAAAAASUVORK5CYII=" data-src="img/Alexandr@1x.jpg" srcset="img/Alexandr@2x.jpg 2x" width="260" height="294" alt="Тренер Александр Пашков.">
+                    <source type="image/webp" media="(min-width: 1200px)" srcset="img/Alexandr-desktop@1x.webp 1x, img/Alexandr-desktop@2x.webp 2x">
+                    <source type="image/webp" media="(min-width: 768px)" srcset="img/Alexandr-tablet@1x.webp 1x, img/Alexandr-tablet@2x.webp 2x">
+                    <source type="image/webp" srcset="img/Alexandr-mobile@1x.webp 1x, img/Alexandr-mobile@2x.webp 2x">
+                    <source media="(min-width: 1200px)" srcset="img/Alexandr-desktop@1x.jpg 1x, img/Alexandr-desktop@2x.jpg 2x">
+                    <source media="(min-width: 768px)" srcset="img/Alexandr-tablet@1x.jpg 1x, img/Alexandr-tablet@2x.jpg 2x">
+                    <img class="slider__image" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAACCAQAAAA3fa6RAAAADklEQVR42mNkAANGCAUAACMAA2w/AMgAAAAASUVORK5CYII=" data-src="img/games-mobile@1x.jpg" srcset="img/Alexandr-mobile@2x.jpg 2x" width="226" height="274" alt="Тренер Александр Пашков.">
                   </picture>
                   <noscript>
-                    <img src="img/Alexandr@1x.jpg" width="260" height="294" alt="Тренер Александр Пашков.">
+                    <img src="img/Alexandr-mobile@1x.jpg" width="226" height="274" alt="Тренер Александр Пашков.">
                   </noscript>
                   <p>
                     Александр Пашков
@@ -489,14 +499,165 @@
                     </div>
                   </section>
                 </li>
-                <li class="slider__nested-list-item">
+                <li class="slider__item swiper-slide">
                   <picture class="slider__picture">
-                    <source type="image/webp" srcset="img/Marya@1x.webp 1x, img/Marya@2x.webp 2x">
-                    <source srcset="img/Marya@1x.jpg 1x, img/Marya@2x.jpg 2x">
-                    <img class="slider__image" loading="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAACCAQAAAA3fa6RAAAADklEQVR42mNkAANGCAUAACMAA2w/AMgAAAAASUVORK5CYII=" data-src="img/Marya@1x.jpg" srcset="img/Marya@2x.jpg 2x" width="260" height="294" alt="Тренер Мария Кетова.">
+                    <source type="image/webp" media="(min-width: 1200px)" srcset="img/Marya-desktop@1x.webp 1x, img/Marya-desktop@2x.webp 2x">
+                    <source type="image/webp" media="(min-width: 768px)" srcset="img/Marya-tablet@1x.webp 1x, img/Marya-tablet@2x.webp 2x">
+                    <source type="image/webp" srcset="img/Marya-mobile@1x.webp 1x, img/Marya-mobile@2x.webp 2x">
+                    <source media="(min-width: 1200px)" srcset="img/Marya-desktop@1x.jpg 1x, img/Marya-desktop@2x.jpg 2x">
+                    <source media="(min-width: 768px)" srcset="img/Marya-tablet@1x.jpg 1x, img/Marya-tablet@2x.jpg 2x">
+                    <img class="slider__image" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAACCAQAAAA3fa6RAAAADklEQVR42mNkAANGCAUAACMAA2w/AMgAAAAASUVORK5CYII=" data-src="img/games-mobile@1x.jpg" srcset="img/Marya-mobile@2x.jpg 2x" width="226" height="274" alt="Тренер Мария Кетова.">
                   </picture>
                   <noscript>
-                    <img src="img/Marya@1x.jpg" width="260" height="294" alt="Тренер Мария Кетова.">
+                    <img src="img/Marya-mobile@1x.jpg" width="226" height="274" alt="Тренер Мария Кетова.">
+                  </noscript>
+                  <p>
+                    Мария Кетова
+                  </p>
+                  <section class="coaches-card">
+                    <div class="coaches-card__content">
+                      <h3 class="coaches-card__title">
+                        Мария Кетова
+                      </h3>
+                      <span>
+                        CrossFit
+                      </span>
+                      <ul class="coaches-card__list">
+                        <li class="coaches-card__item">
+                          Certified Level 3 Trainer
+                        </li>
+                        <li class="coaches-card__item">
+                          Победитель чемпионата России по CrossFit
+                        </li>
+                        <li class="coaches-card__item">
+                          Опыт — 6 лет
+                        </li>
+                      </ul>
+                    </div>
+                  </section>
+                </li>
+                <li class="slider__item swiper-slide">
+                  <picture class="slider__picture">
+                    <source type="image/webp" media="(min-width: 1200px)" srcset="img/Anna-desktop@1x.webp 1x, img/Anna-desktop@2x.webp 2x">
+                    <source type="image/webp" media="(min-width: 768px)" srcset="img/Anna-tablet@1x.webp 1x, img/Anna-tablet@2x.webp 2x">
+                    <source type="image/webp" srcset="img/Anna-mobile@1x.webp 1x, img/Anna-mobile@2x.webp 2x">
+                    <source media="(min-width: 1200px)" srcset="img/Anna-desktop@1x.jpg 1x, img/Anna-desktop@2x.jpg 2x">
+                    <source media="(min-width: 768px)" srcset="img/Anna-tablet@1x.jpg 1x, img/Anna-tablet@2x.jpg 2x">
+                    <img class="slider__image" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAACCAQAAAA3fa6RAAAADklEQVR42mNkAANGCAUAACMAA2w/AMgAAAAASUVORK5CYII=" data-src="img/games-mobile@1x.jpg" srcset="img/Anna-mobile@2x.jpg 2x" width="226" height="274" alt="Тренер Анна Павлова.">
+                  </picture>
+                  <noscript>
+                    <img src="img/Anna-mobile@1x.jpg" width="226" height="274" alt="Тренер Анна Павлова.">
+                  </noscript>
+                  <p>
+                    Анна Павлова
+                  </p>
+                  <section class="coaches-card">
+                    <div class="coaches-card__content">
+                      <h3 class="coaches-card__title">
+                        Анна Павлова
+                      </h3>
+                      <span>
+                        CrossFit
+                      </span>
+                      <ul class="coaches-card__list">
+                        <li class="coaches-card__item">
+                          Certified Level 3 Trainer
+                        </li>
+                        <li class="coaches-card__item">
+                          Победитель чемпионата России по CrossFit
+                        </li>
+                        <li class="coaches-card__item">
+                          Опыт — 6 лет
+                        </li>
+                      </ul>
+                    </div>
+                  </section>
+                </li>
+                <li class="slider__item swiper-slide">
+                  <picture class="slider__picture">
+                    <source type="image/webp" media="(min-width: 1200px)" srcset="img/Alexey-desktop@1x.webp 1x, img/Alexey-desktop@2x.webp 2x">
+                    <source type="image/webp" media="(min-width: 768px)" srcset="img/Alexey-tablet@1x.webp 1x, img/Alexey-tablet@2x.webp 2x">
+                    <source type="image/webp" srcset="img/Alexey-mobile@1x.webp 1x, img/Alexey-mobile@2x.webp 2x">
+                    <source media="(min-width: 1200px)" srcset="img/Alexey-desktop@1x.jpg 1x, img/Alexey-desktop@2x.jpg 2x">
+                    <source media="(min-width: 768px)" srcset="img/Alexey-tablet@1x.jpg 1x, img/Alexey-tablet@2x.jpg 2x">
+                    <img class="slider__image" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAACCAQAAAA3fa6RAAAADklEQVR42mNkAANGCAUAACMAA2w/AMgAAAAASUVORK5CYII=" data-src="img/games-mobile@1x.jpg" srcset="img/Alexey-mobile@2x.jpg 2x" width="226" height="274" alt="Тренер Алексей Лавров.">
+                  </picture>
+                  <noscript>
+                    <img src="img/Alexey-mobile@1x.jpg" width="226" height="274" alt="Тренер Алексей Лавров.">
+                  </noscript>
+                  <p>
+                    Алексей Лавров
+                  </p>
+                  <section class="coaches-card">
+                    <div class="coaches-card__content">
+                      <h3 class="coaches-card__title">
+                        Алексей Лавров
+                      </h3>
+                      <span>
+                        CrossFit
+                      </span>
+                      <ul class="coaches-card__list">
+                        <li class="coaches-card__item">
+                          Certified Level 3 Trainer
+                        </li>
+                        <li class="coaches-card__item">
+                          Победитель чемпионата России по CrossFit
+                        </li>
+                        <li class="coaches-card__item">
+                          Опыт — 6 лет
+                        </li>
+                      </ul>
+                    </div>
+                  </section>
+                </li>
+                <li class="slider__item swiper-slide">
+                  <picture class="slider__picture">
+                    <source type="image/webp" media="(min-width: 1200px)" srcset="img/Alexandr-desktop@1x.webp 1x, img/Alexandr-desktop@2x.webp 2x">
+                    <source type="image/webp" media="(min-width: 768px)" srcset="img/Alexandr-tablet@1x.webp 1x, img/Alexandr-tablet@2x.webp 2x">
+                    <source type="image/webp" srcset="img/Alexandr-mobile@1x.webp 1x, img/Alexandr-mobile@2x.webp 2x">
+                    <source media="(min-width: 1200px)" srcset="img/Alexandr-desktop@1x.jpg 1x, img/Alexandr-desktop@2x.jpg 2x">
+                    <source media="(min-width: 768px)" srcset="img/Alexandr-tablet@1x.jpg 1x, img/Alexandr-tablet@2x.jpg 2x">
+                    <img class="slider__image" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAACCAQAAAA3fa6RAAAADklEQVR42mNkAANGCAUAACMAA2w/AMgAAAAASUVORK5CYII=" data-src="img/games-mobile@1x.jpg" srcset="img/Alexandr-mobile@2x.jpg 2x" width="226" height="274" alt="Тренер Александр Пашков.">
+                  </picture>
+                  <noscript>
+                    <img src="img/Alexandr-mobile@1x.jpg" width="226" height="274" alt="Тренер Александр Пашков.">
+                  </noscript>
+                  <p>
+                    Александр Пашков
+                  </p>
+                  <section class="coaches-card">
+                    <div class="coaches-card__content">
+                      <h3 class="coaches-card__title">
+                        Александр Пашков
+                      </h3>
+                      <span>
+                        CrossFit
+                      </span>
+                      <ul class="coaches-card__list">
+                        <li class="coaches-card__item">
+                          Certified Level 3 Trainer
+                        </li>
+                        <li class="coaches-card__item">
+                          Победитель чемпионата России по CrossFit
+                        </li>
+                        <li class="coaches-card__item">
+                          Опыт — 6 лет
+                        </li>
+                      </ul>
+                    </div>
+                  </section>
+                </li>
+                <li class="slider__item swiper-slide">
+                  <picture class="slider__picture">
+                    <source type="image/webp" media="(min-width: 1200px)" srcset="img/Marya-desktop@1x.webp 1x, img/Marya-desktop@2x.webp 2x">
+                    <source type="image/webp" media="(min-width: 768px)" srcset="img/Marya-tablet@1x.webp 1x, img/Marya-tablet@2x.webp 2x">
+                    <source type="image/webp" srcset="img/Marya-mobile@1x.webp 1x, img/Marya-mobile@2x.webp 2x">
+                    <source media="(min-width: 1200px)" srcset="img/Marya-desktop@1x.jpg 1x, img/Marya-desktop@2x.jpg 2x">
+                    <source media="(min-width: 768px)" srcset="img/Marya-tablet@1x.jpg 1x, img/Marya-tablet@2x.jpg 2x">
+                    <img class="slider__image" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAACCAQAAAA3fa6RAAAADklEQVR42mNkAANGCAUAACMAA2w/AMgAAAAASUVORK5CYII=" data-src="img/games-mobile@1x.jpg" srcset="img/Marya-mobile@2x.jpg 2x" width="226" height="274" alt="Тренер Мария Кетова.">
+                  </picture>
+                  <noscript>
+                    <img src="img/Marya-mobile@1x.jpg" width="226" height="274" alt="Тренер Мария Кетова.">
                   </noscript>
                   <p>
                     Мария Кетова
@@ -524,150 +685,11 @@
                   </section>
                 </li>
               </ul>
-            </li>
-            <li class="slider__item swiper-slide">
-              <ul class="slider__nested-list">
-                <li class="slider__nested-list-item">
-                  <picture class="slider__picture">
-                    <source type="image/webp" srcset="img/Alexey@1x.webp 1x, img/Alexey@2x.webp 2x">
-                    <source srcset="img/Alexey@1x.jpg 1x, img/Alexey@2x.jpg 2x">
-                    <img class="slider__image" loading="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAACCAQAAAA3fa6RAAAADklEQVR42mNkAANGCAUAACMAA2w/AMgAAAAASUVORK5CYII=" data-src="img/Alexey@1x.jpg" srcset="img/Alexey@2x.jpg 2x" width="260" height="294" alt="Тренер Алексей Лавров.">
-                  </picture>
-                  <noscript>
-                    <img src="img/Alexey@1x.jpg" width="260" height="294" alt="Тренер Алексей Лавров.">
-                  </noscript>
-                  <p>
-                    Алексей Лавров
-                  </p>
-                  <section class="coaches-card">
-                    <div class="coaches-card__content">
-                      <h3 class="coaches-card__title">
-                        Алексей Лавров
-                      </h3>
-                      <span>
-                        CrossFit
-                      </span>
-                      <ul class="coaches-card__list">
-                        <li class="coaches-card__item">
-                          Certified Level 3 Trainer
-                        </li>
-                        <li class="coaches-card__item">
-                          Победитель чемпионата России по CrossFit
-                        </li>
-                        <li class="coaches-card__item">
-                          Опыт — 6 лет
-                        </li>
-                      </ul>
-                    </div>
-                  </section>
-                </li>
-                <li class="slider__nested-list-item">
-                  <picture class="slider__picture">
-                    <source type="image/webp" srcset="img/Anna@1x.webp 1x, img/Anna@2x.webp 2x">
-                    <source srcset="img/Anna@1x.jpg 1x, img/Anna@2x.jpg 2x">
-                    <img class="slider__image" loading="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAACCAQAAAA3fa6RAAAADklEQVR42mNkAANGCAUAACMAA2w/AMgAAAAASUVORK5CYII=" data-src="img/Anna@1x.jpg" srcset="img/Anna@2x.jpg 2x" width="260" height="294" alt="Тренер Анна Павлова.">
-                  </picture>
-                  <noscript>
-                    <img src="img/Anna@1x.jpg" width="260" height="294" alt="Тренер Анна Павлова.">
-                  </noscript>
-                  <p>
-                    Анна Павлова
-                  </p>
-                  <section class="coaches-card">
-                    <div class="coaches-card__content">
-                      <h3 class="coaches-card__title">
-                        Анна Павлова
-                      </h3>
-                      <span>
-                        CrossFit
-                      </span>
-                      <ul class="coaches-card__list">
-                        <li class="coaches-card__item">
-                          Certified Level 3 Trainer
-                        </li>
-                        <li class="coaches-card__item">
-                          Победитель чемпионата России по CrossFit
-                        </li>
-                        <li class="coaches-card__item">
-                          Опыт — 6 лет
-                        </li>
-                      </ul>
-                    </div>
-                  </section>
-                </li>
-                <li class="slider__nested-list-item">
-                  <picture class="slider__picture">
-                    <source type="image/webp" srcset="img/Marya@1x.webp 1x, img/Marya@2x.webp 2x">
-                    <source srcset="img/Marya@1x.jpg 1x, img/Marya@2x.jpg 2x">
-                    <img class="slider__image" loading="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAACCAQAAAA3fa6RAAAADklEQVR42mNkAANGCAUAACMAA2w/AMgAAAAASUVORK5CYII=" data-src="img/Marya@1x.jpg" srcset="img/Marya@2x.jpg 2x" width="260" height="294" alt="Тренер Мария Кетова.">
-                  </picture>
-                  <noscript>
-                    <img src="img/Marya@1x.jpg" width="260" height="294" alt="Тренер Мария Кетова.">
-                  </noscript>
-                  <p>
-                    Мария Кетова
-                  </p>
-                  <section class="coaches-card">
-                    <div class="coaches-card__content">
-                      <h3 class="coaches-card__title">
-                        Мария Кетова
-                      </h3>
-                      <span>
-                        CrossFit
-                      </span>
-                      <ul class="coaches-card__list">
-                        <li class="coaches-card__item">
-                          Certified Level 3 Trainer
-                        </li>
-                        <li class="coaches-card__item">
-                          Победитель чемпионата России по CrossFit
-                        </li>
-                        <li class="coaches-card__item">
-                          Опыт — 6 лет
-                        </li>
-                      </ul>
-                    </div>
-                  </section>
-                </li>
-                <li class="slider__nested-list-item">
-                  <picture class="slider__picture">
-                    <source type="image/webp" srcset="img/Alexandr@1x.webp 1x, img/Alexandr@2x.webp 2x">
-                    <source srcset="img/Alexandr@1x.jpg 1x, img/Alexandr@2x.jpg 2x">
-                    <img class="slider__image" loading="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAACCAQAAAA3fa6RAAAADklEQVR42mNkAANGCAUAACMAA2w/AMgAAAAASUVORK5CYII=" data-src="img/Alexandr@1x.jpg" srcset="img/Alexandr@2x.jpg 2x" width="260" height="294" alt="Тренер Александр Пашков.">
-                  </picture>
-                  <noscript>
-                    <img src="img/Alexandr@1x.jpg" width="260" height="294" alt="Тренер Александр Пашков.">
-                  </noscript>
-                  <p>
-                    Александр Пашков
-                  </p>
-                  <section class="coaches-card">
-                    <div class="coaches-card__content">
-                      <h3 class="coaches-card__title">
-                        Александр Пашков
-                      </h3>
-                      <span>
-                        CrossFit
-                      </span>
-                      <ul class="coaches-card__list">
-                        <li class="coaches-card__item">
-                          Certified Level 3 Trainer
-                        </li>
-                        <li class="coaches-card__item">
-                          Победитель чемпионата России по CrossFit
-                        </li>
-                        <li class="coaches-card__item">
-                          Опыт — 6 лет
-                        </li>
-                      </ul>
-                    </div>
-                  </section>
-                </li>
-              </ul>
-            </li>
-          </ul>
-          <button class="slider__button slider__button--next swiper-button-next">
-          </button>
+            </div>
+            <div class="slider__button-wrapper">
+              <button class="slider__button slider__button--next swiper-button-next" type="button"></button>
+            </div>
+          </div>
         </div>
       </section>
     </main>

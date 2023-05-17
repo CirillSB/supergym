@@ -7,7 +7,7 @@
   transition: all 0.3s ease 0s;
   background: rgba(16, 38, 84, 0.89);
   color: $color-default-white;
-  padding: 52px 2px;
+  padding: 51px 2px 52px;
   visibility: hidden;
   opacity: 0;
 }
@@ -19,7 +19,7 @@
   align-items: center;
 
   span {
-    margin-bottom: 27px;
+    margin-bottom: 29px;
     font-family: $ff-roboto-regular;
     font-weight: 400;
     font-size: 16px;

@@ -2943,85 +2943,56 @@ button,
 }
 
 .coaches {
-  padding-bottom: 140px;
+  padding: 0 0 140px 0;
+}
+
+.coaches__inner {
+  padding: 0 7%;
 }
 
 .coaches__title {
   margin: 0 0 48px;
 }
 
-.coaches__slider {
+.slider__wrapper {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
-.slider {
-  width: 100%;
+.slider__inner {
+  position: relative;
+  width: 85.2122986823%;
 }
 
 .slider__list {
-  width: 100%;
-  padding: 0 7.6134699854%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-  -webkit-box-align: start;
-  -ms-flex-align: start;
-  align-items: flex-start;
   margin: 0;
+  padding: 0;
+  list-style-type: none;
 }
 
 .slider__item {
-  list-style-type: none;
-}
-
-.slider__picture {
-  width: 100%;
-}
-
-.slider__image {
-  width: 100%;
-}
-
-.slider__nested-list {
-  width: 84.7730600293%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-  -webkit-box-align: start;
-  -ms-flex-align: start;
-  align-items: flex-start;
-  padding: 0;
-  overflow-x: hidden;
-  list-style-type: none;
-}
-
-.slider__nested-list-item {
   position: relative;
-  width: 22.4525043178%;
-  background-color: #c3c8d4;
 }
 
-.slider__nested-list-item:hover .coaches-card {
+.slider__item:hover .coaches-card {
   visibility: visible;
   opacity: 1;
 }
 
-.slider__nested-list-item:hover p {
+.slider__item:hover p {
   display: none;
 }
 
-.slider__nested-list-item p {
+.slider__item p {
+  width: 100%;
   position: absolute;
   bottom: 22px;
   left: 50%;
@@ -3029,7 +3000,6 @@ button,
   -ms-transform: translateX(-50%);
   transform: translateX(-50%);
   margin: 0;
-  width: 100%;
   text-align: center;
   font-family: "RobotoCondensed-Bold", "Arial", sans-serif;
   font-weight: 700;
@@ -3038,14 +3008,30 @@ button,
   color: #ffffff;
 }
 
+.slider__picture {
+  display: block;
+}
+
+.slider__button-wrapper {
+  position: relative;
+  width: 7.5402635432%;
+  height: 100px;
+}
+
 .slider__button {
-  top: 0;
-  padding: 0;
-  width: 6.5153733529%;
-  background-color: transparent;
+  top: 16%;
+  width: 100%;
   height: 100%;
   border: none;
-  margin: 0;
+  background-color: #ffffff;
+}
+
+.slider__button--prev {
+  left: 0;
+}
+
+.slider__button--next {
+  right: 0;
 }
 
 .coaches-card {
@@ -3059,7 +3045,7 @@ button,
   transition: all 0.3s ease 0s;
   background: rgba(16, 38, 84, 0.89);
   color: #ffffff;
-  padding: 52px 2px;
+  padding: 51px 2px 52px;
   visibility: hidden;
   opacity: 0;
 }
@@ -3081,7 +3067,7 @@ button,
 }
 
 .coaches-card__content span {
-  margin-bottom: 27px;
+  margin-bottom: 29px;
   font-family: "RobotoCondensed-Regular", "Arial", sans-serif;
   font-weight: 400;
   font-size: 16px;
@@ -3422,6 +3408,38 @@ button,
     font-size: 10px;
     line-height: 15px;
   }
+
+  .coaches {
+    padding: 51px 0 140px;
+  }
+
+  .coaches__title {
+    margin: 0 6px 31px 0;
+    text-align: center;
+  }
+
+  .slider__inner {
+    width: 73.828125%;
+  }
+
+  .slider__item {
+    width: 268px;
+    -o-object-fit: cover;
+    object-fit: cover;
+  }
+
+  .slider__picture {
+    -o-object-fit: cover;
+    object-fit: cover;
+  }
+
+  .slider__button--prev {
+    left: 24px;
+  }
+
+  .slider__button--next {
+    left: -24px;
+  }
 }
 
 @media (-webkit-min-device-pixel-ratio: 1.5) and (-webkit-min-device-pixel-ratio: 1.5) and (max-width: 1199px), (-o-min-device-pixel-ratio: 3/2) and (-o-min-device-pixel-ratio: 3/2) and (max-width: 1199px), (min-resolution: 144dpi) and (min-resolution: 144dpi) and (max-width: 1199px), (min-resolution: 144dpi) and (min-resolution: 1.5dppx) and (max-width: 1199px), (min-resolution: 1.5dppx) and (min-resolution: 144dpi) and (max-width: 1199px), (min-resolution: 1.5dppx) and (min-resolution: 1.5dppx) and (max-width: 1199px) {
@@ -3635,6 +3653,26 @@ button,
   .games-promo-date__link {
     border-width: 2px;
     padding: 12px 0 13px;
+  }
+
+  .coaches {
+    padding: 14px 0 140px;
+  }
+
+  .coaches__title {
+    margin: 0 5px 42px 0;
+  }
+
+  .slider__inner {
+    width: 70.625%;
+  }
+
+  .slider__button--prev {
+    left: 38%;
+  }
+
+  .slider__button--next {
+    left: -38%;
   }
 }
 

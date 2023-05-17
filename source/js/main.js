@@ -22,6 +22,9 @@ import {
 import {
   initCoachersCards
 } from './modules/init-coachers-cards';
+import {
+  initDynamicAdaptive
+} from './modules/init-dynamic-adaptive';
 
 // ---------------------------------
 
@@ -40,6 +43,7 @@ window.addEventListener('DOMContentLoaded', () => {
   // в load следует добавить скрипты, не участвующие в работе первого экрана
   window.addEventListener('load', () => {
     initTabs();
+    initDynamicAdaptive();
     initModals();
     const form = new Form();
     window.form = form;

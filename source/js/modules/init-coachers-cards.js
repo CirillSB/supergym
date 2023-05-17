@@ -6,20 +6,24 @@ export const initCoachersCards = () => {
   const cardsDescriptions = document.querySelectorAll('.coaches-card');
 
   const hideCardsDescriptions = () => {
-    cardsDescriptions.forEach((e) => {
-      e.style.visibility = 'hidden';
-      e.style.opacity = '0';
-    });
+    if (window.matchMedia('(max-width: 1199px)').matches) {
+      cardsDescriptions.forEach((e) => {
+        e.style.visibility = 'hidden';
+        e.style.opacity = '0';
+      });
+    }
   };
 
   const showDescription = () => {
-    for (let i = 0; i < cards.length; i++) {
-      if (event.target === image[i] || event.target === title[i]) {
-        hideCardsDescriptions();
-        cardsDescriptions[i].style.visibility = 'visible';
-        cardsDescriptions[i].style.opacity = '1';
-        if (!title[i].classList.contains('hidden')) {
-          title[i].classList.add('hidden');
+    if (window.matchMedia('(max-width: 1199px)').matches) {
+      for (let i = 0; i < cards.length; i++) {
+        if (event.target === image[i] || event.target === title[i]) {
+          hideCardsDescriptions();
+          cardsDescriptions[i].style.visibility = 'visible';
+          cardsDescriptions[i].style.opacity = '1';
+          if (!title[i].classList.contains('hidden')) {
+            title[i].classList.add('hidden');
+          }
         }
       }
     }

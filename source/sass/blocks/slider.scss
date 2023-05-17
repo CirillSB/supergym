@@ -1,43 +1,49 @@
-.slider {
-  width: 100%;
+.slider {}
+
+.slider__wrapper {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.slider__inner {
+  position: relative;
+
+  width: calc(1164 / 1366 * 100%);
+
+  @include tablet {
+    width: calc(567 / 768 * 100%);
+  }
+
+  @include mobile {
+    width: calc(226 / 320 * 100%);
+  }
 }
 
 .slider__list {
-  width: 100%;
-  padding: 0 calc(104 / 1366 * 100%);
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
   margin: 0;
+
+  padding: 0;
+  list-style-type: none;
+
+  @include tablet {}
+
+  @include mobile {}
 }
 
 .slider__item {
-  list-style-type: none;
-}
-
-.slider__picture {
-  width: 100%;
-}
-
-.slider__image {
-  width: 100%;
-}
-
-.slider__nested-list {
-
-  width: calc(1158 / 1366 * 100%);
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  padding: 0;
-  overflow-x: hidden;
-  list-style-type: none;
-}
-
-.slider__nested-list-item {
   position: relative;
-  width: calc(260 / 1158 * 100%);
-  background-color: $color-link-water;
+
+
+  @include tablet {
+    // width: calc(268 / 100 * 100vw);
+    width: 268px;
+    // margin-right: 1%;
+    object-fit: cover;
+  }
+
+  @include mobile {}
 
   &:hover {
     .coaches-card {
@@ -51,12 +57,12 @@
   }
 
   p {
+    width: 100%;
     position: absolute;
     bottom: 22px;
     left: 50%;
     transform: translateX(-50%);
     margin: 0;
-    width: 100%;
     text-align: center;
     font-family: $ff-roboto-bold;
     font-weight: 700;
@@ -66,12 +72,67 @@
   }
 }
 
+.slider__picture {
+  display: block;
+
+  @include tablet {
+    // width: 100%;
+    object-fit: cover;
+  }
+
+  @include mobile {}
+}
+
+.slider__image {
+
+  @include tablet {
+    // height: 100%;
+    // width: 100%;
+
+    // object-fit: cover;
+  }
+
+  @include mobile {}
+}
+
+.slider__button-wrapper {
+  position: relative;
+  width: calc(103 / 1366 * 100%);
+  height: 100px;
+}
+
 .slider__button {
-  top: 0;
-  padding: 0;
-  width: calc(89 / 1366 * 100%);
-  background-color: transparent;
+  top: 16%;
+  width: 100%;
   height: 100%;
   border: none;
-  margin: 0;
+  background-color: $color-default-white;
+
+  &--prev {
+    left: 0;
+
+    @include tablet {
+      left: 24px;
+    }
+
+    @include mobile {
+      left: 38%;
+    }
+  }
+
+  &--next {
+    right: 0;
+
+    @include tablet {
+      left: -24px;
+    }
+
+    @include mobile {
+      left: -38%;
+    }
+  }
+
+  @include tablet {}
+
+  @include mobile {}
 }
