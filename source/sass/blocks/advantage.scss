@@ -1,0 +1,132 @@
+.advantage {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  color: $color-sapphire;
+      position: relative;
+
+  &--center {
+//     background-color: $color-resolution-blue;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+//     padding: 43px 0 57px;
+
+//     p {
+//       font-size: 74px;
+//       line-height: 111px;
+//       color: $color-default-white;
+//     }
+  }
+  &--area {
+    justify-items: start;
+    align-items: start;
+    border-bottom: 2px solid rgba(209, 10, 66, 0.2);
+  }  
+  &--parking {
+    justify-items: end;
+    align-items: start;
+    border-bottom: 2px solid rgba(209, 10, 66, 0.2);
+    bottom: 1px;
+    right: 11px;
+  }  
+  &--comfort {
+    justify-items: start;
+    align-items: end;
+    // border-top: 1px solid rgba(209, 10, 66, 0.2);
+        bottom: -6px;
+    // right: 11px;
+    left: 3px;
+  }  
+  &--experience {
+    justify-items: end;
+    align-items: end;
+    // border-top: 1px solid rgba(209, 10, 66, 0.2);
+
+    bottom: -6px;
+    right: 11px;
+  }
+}
+
+.advantage__inner {
+  padding-left: 30px;
+
+  p {
+    margin: 0;
+  }
+
+  &--white {
+//     display: flex;
+//     flex-direction: column;
+//     justify-content: flex-start;
+//     align-items: center;
+padding: 0;
+    p {
+      text-align: center;
+//       margin: 0 0 0 -23px;
+margin: 0;
+
+      font-size: 16px;
+      line-height: 24px;
+//       text-align: center;
+color: $color-default-white;
+    }
+  }
+}
+
+.advantage__value {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+
+  p {
+    // display: inline-block;
+    margin: 0 0 4px 0;
+    font-family: $ff-roboto-bold;
+    font-weight: 700;
+    font-size: 71px;
+    line-height: 53px;
+    color: transparent;
+    background-clip: text;
+    background-image: linear-gradient(127.61deg, $color-crimson 0%, $color-cobalt 45.58%);
+    border-image-slice: 1;
+  }
+
+  span {
+    font-family: $ff-roboto-regular;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    color: $color-persian-blue;
+  }
+
+  &--white {
+    align-items: center;
+    color: $color-default-white;
+
+    p {
+      margin: 0 0 -8px -6px;
+      font-size: 74px;
+      line-height: 95px;
+      color: $color-default-white;
+    }
+
+    span {
+        margin-bottom: 33px;
+      font-size: 26px;
+      line-height: 39px;
+      color: $color-default-white;
+    }
+  }
+}
+
+.advantage__title {
+  margin: -4px 0 4px;
+  font-family: $ff-roboto-bold;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 33px;
+  color: $color-sapphire;
+}
