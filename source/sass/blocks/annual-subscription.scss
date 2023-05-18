@@ -1,0 +1,80 @@
+.annual-subscription {
+  grid-column: 1 / 2;
+  grid-row: 1 / -1;
+  display: flex;
+  justify-content: space-between;
+
+  @include mobile {
+    flex-direction: column;
+  }
+}
+
+.annual-subscription__description {
+  background-color: $color-torch-red;
+  padding: 45px 45px 50px;
+  width: 50%;
+
+  dl {
+    font-family: $ff-roboto-bold;
+    font-weight: 700;
+    color: $color-default-white;
+    margin: 0 0 19px 0;
+
+    dt {
+      font-size: 28px;
+      line-height: 44px;
+    }
+
+    dd {
+      margin: 0;
+      font-size: 70px;
+      line-height: 109px;
+    }
+  }
+
+  p {
+    font-family: $ff-roboto-regular;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+    color: $color-default-white;
+    margin: 0 0 111px;
+  }
+
+  @include mobile {
+    width: 100%;
+  }
+}
+
+.annual-subscription__link {
+  font-family: $ff-roboto-bold;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: $color-default-white;
+  border-bottom: 1px solid $color-default-white;
+}
+
+.annual-subscription__banner {
+  background-color: $color-persian-blue;
+  width: 50%;
+
+  @include tablet {
+    width: calc(399 / 678 * 100%);
+  }
+
+  @include mobile {
+    width: 100%;
+  }
+}
+
+.annual-subscription__image {
+  height: 100%;
+
+  @include tablet {
+    width: 100%;
+    object-fit: contain;
+  }
+}
