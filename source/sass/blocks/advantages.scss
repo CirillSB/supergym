@@ -1,52 +1,75 @@
 .advantages {
-	background-color: $color-ghost-white;
-	padding: 96px calc(120 / 1051 * 100%) 91px calc(138 / 1051 * 100%);
+  background-color: $color-ghost-white;
+  padding: 96px calc(120 / 1051 * 100%) 91px calc(138 / 1051 * 100%);
+
+  @include tablet {
+    padding: 92px calc(45 / 768 * 100%) 100px;
+  }
+
+  @include mobile {
+    padding: 64px calc(45 / 768 * 100%) 67px;
+  }
 }
+
 .advantages__wrapper {
-	// position: relative;
-	display: grid;
-	// grid-template-columns: 314px 240px 314px;
-	grid-template-columns: 1fr 240px 1fr;
-	grid-template-rows: repeat(2, 50%);
-	grid-column-gap: 60px;
+  display: grid;
+  grid-template-columns: 1fr 240px 1fr;
+  grid-template-rows: repeat(2, 50%);
+  grid-column-gap: 60px;
 
+  @include tablet {
+    grid-template-columns: repeat(4, auto);
+    grid-template-rows: auto auto auto;
+    grid-column-gap: 53px;
+  }
 
+  @include mobile {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+  }
 }
-// .advantages__inner {
-// 	display: flex;
-// 	justify-content: space-between;
-// 		margin-bottom: 154px;
-// 	&:last-child {
-// 		margin-bottom: 0;
-// 	}
-// }
-// .advantages__item  {
 
-// 	width: 34%;
-
-// 	&--central {
-// 		position: absolute;
-// 		left: 49.8%;
-// 		top: 0.5%;
-// 		transform: translate(-50%);
-// 		width: 24%;
-// 	}
-// }
 .advantages__title {
-	margin: 0 0 56px -11px;
-	text-align: center;
+  margin: 0 0 56px -11px;
+  text-align: center;
+
+  @include tablet {
+    margin: 0 0 48px -22px;
+  }
+
+  @include mobile {
+    margin: 0 0 48px -17px;
+  }
 }
+
 .advantages__item {
-	&--central {
-		grid-column: 2 / 3;
-		grid-row: 1 / -1;
-		min-width: calc(240 / 1040 * 100%);
-		background-color: $color-resolution-blue;
-		margin: 0 11px 0 -11px;
-		padding: 42px 0 58px 0;
+  @include mobile {
+    margin-bottom: 42px;
 
-		p {
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
 
-		}
-	}
+  &--central {
+    grid-column: 2 / 3;
+    grid-row: 1 / -1;
+    min-width: calc(240 / 1040 * 100%);
+    background-color: $color-resolution-blue;
+    margin: 0 11px 0 -11px;
+    padding: 42px 0 58px 0;
+
+    @include tablet {
+      grid-column: 1 / -1;
+      grid-row: 2 / 3;
+      margin: 40px 17.4% 37px;
+    }
+
+    @include mobile {
+      margin: 0 0 41px 0;
+      width: 100vw;
+    }
+  }
 }

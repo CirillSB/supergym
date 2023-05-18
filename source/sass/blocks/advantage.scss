@@ -3,74 +3,127 @@
   justify-content: flex-start;
   align-items: flex-start;
   color: $color-sapphire;
-      position: relative;
+  position: relative;
+
+  @include mobile {
+    flex-direction: column;
+    align-items: center;
+  }
 
   &--center {
-//     background-color: $color-resolution-blue;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-//     padding: 43px 0 57px;
 
-//     p {
-//       font-size: 74px;
-//       line-height: 111px;
-//       color: $color-default-white;
-//     }
+    @include tablet {
+      margin: 50px 0;
+      padding: 45px 0 38px;
+    }
+
+    @include mobile {
+      padding: 51px 0 43px;
+    }
   }
+
   &--area {
     justify-items: start;
     align-items: start;
     border-bottom: 2px solid rgba(209, 10, 66, 0.2);
-  }  
+
+    @include tablet {
+      grid-column: 1 / 3;
+      grid-row: 1 / 2;
+      border-bottom: none;
+    }
+  }
+
   &--parking {
     justify-items: end;
     align-items: start;
     border-bottom: 2px solid rgba(209, 10, 66, 0.2);
     bottom: 1px;
-    right: 11px;
-  }  
+
+    @include tablet {
+      grid-column: 3 / -1;
+      grid-row: 1 / 2;
+      border-bottom: none;
+      position: relative;
+      left: 1px;
+    }
+  }
+
   &--comfort {
     justify-items: start;
     align-items: end;
-    // border-top: 1px solid rgba(209, 10, 66, 0.2);
-        bottom: -6px;
-    // right: 11px;
+    bottom: -6px;
     left: 3px;
-  }  
+
+    @include tablet {
+      grid-column: 1 / 3;
+      grid-row: 3 / 4;
+      border-bottom: none;
+    }
+
+    @include mobile {
+      left: 0;
+    }
+  }
+
   &--experience {
     justify-items: end;
     align-items: end;
-    // border-top: 1px solid rgba(209, 10, 66, 0.2);
-
     bottom: -6px;
     right: 11px;
+
+    @include tablet {
+      position: relative;
+      grid-column: 3 / -1;
+      grid-row: 3 / 4;
+      left: 1px;
+    }
+
+    @include mobile {
+      left: 0;
+    }
   }
 }
 
 .advantage__inner {
   padding-left: 30px;
 
+  @include tablet {
+    padding-left: 29px;
+  }
+
+  @include mobile {
+    text-align: center;
+    padding: 0 9.5%;
+  }
+
   p {
     margin: 0;
+    font-family: $ff-roboto-light;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 22px;
+    color: $color-sapphire;
   }
 
   &--white {
-//     display: flex;
-//     flex-direction: column;
-//     justify-content: flex-start;
-//     align-items: center;
-padding: 0;
+    padding: 0;
+
+    @include tablet {
+      padding-left: 0;
+    }
+
     p {
       text-align: center;
-//       margin: 0 0 0 -23px;
-margin: 0;
-
+      margin: 0;
       font-size: 16px;
       line-height: 24px;
-//       text-align: center;
-color: $color-default-white;
+      color: $color-default-white;
     }
   }
 }
@@ -81,8 +134,12 @@ color: $color-default-white;
   justify-content: flex-start;
   align-items: flex-start;
 
+  @include mobile {
+    align-items: center;
+    margin-bottom: 7px;
+  }
+
   p {
-    // display: inline-block;
     margin: 0 0 4px 0;
     font-family: $ff-roboto-bold;
     font-weight: 700;
@@ -92,6 +149,12 @@ color: $color-default-white;
     background-clip: text;
     background-image: linear-gradient(127.61deg, $color-crimson 0%, $color-cobalt 45.58%);
     border-image-slice: 1;
+
+    @include tablet {
+      font-size: 58px;
+      line-height: 48px;
+      margin: 0;
+    }
   }
 
   span {
@@ -111,13 +174,32 @@ color: $color-default-white;
       font-size: 74px;
       line-height: 95px;
       color: $color-default-white;
+
+      @include tablet {
+        margin: 0 0 13px -6px;
+        font-size: 74px;
+      }
+
+      @include mobile {
+        margin: 0 0 7px -4px;
+      }
     }
 
     span {
-        margin-bottom: 33px;
+      margin-bottom: 33px;
       font-size: 26px;
       line-height: 39px;
       color: $color-default-white;
+
+      @include tablet {
+        font-size: 22px;
+        line-height: 33px;
+        margin-bottom: 14px;
+      }
+
+      @include mobile {
+        margin-bottom: 2px;
+      }
     }
   }
 }
@@ -129,4 +211,15 @@ color: $color-default-white;
   font-size: 22px;
   line-height: 33px;
   color: $color-sapphire;
+
+  @include tablet {
+    font-size: 20px;
+    line-height: 30px;
+    margin-top: -4px;
+  }
+
+  @include mobile {
+    margin: 0 0 2px 0;
+    text-align: center;
+  }
 }
