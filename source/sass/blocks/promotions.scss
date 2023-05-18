@@ -1,12 +1,24 @@
+.promotions {
+	padding: 101px 0;
+}
 .promotions__title {
   text-align: center;
+  margin: 0 0 35px 0;
+    @include tablet {
+
+  }
+
+  @include mobile {
+
+  }
 }
 
 .promotions__wrapper {
   display: grid;
   grid-template-columns: repeat(2, 50%);
   grid-template-rows: repeat(2, 50%);
-  gap: 40px;
+  // gap: 40px;
+  grid-column-gap: 21px;
 
   @include tablet {
     display: flex;
@@ -15,7 +27,9 @@
     align-items: center;
   }
 }
-
+.promotions__inner {
+	width: 96.5%;
+}
 .promotions__inner--right {
   grid-column: 2 / -1;
   grid-row: 1 / -1;

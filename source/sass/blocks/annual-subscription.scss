@@ -11,18 +11,19 @@
 
 .annual-subscription__description {
   background-color: $color-torch-red;
-  padding: 45px 45px 50px;
+  padding: 32px 45px 44px;
   width: 50%;
 
   dl {
     font-family: $ff-roboto-bold;
     font-weight: 700;
     color: $color-default-white;
-    margin: 0 0 19px 0;
+    margin: 0;
 
     dt {
       font-size: 28px;
       line-height: 44px;
+      margin-bottom: -24px;
     }
 
     dd {
@@ -38,7 +39,7 @@
     font-size: 18px;
     line-height: 25px;
     color: $color-default-white;
-    margin: 0 0 111px;
+    margin: 0 0 182px;
   }
 
   @include mobile {
