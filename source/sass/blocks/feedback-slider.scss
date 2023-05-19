@@ -1,9 +1,130 @@
 .feedback-slider__wrapper {
-display: flex;
-padding: 0 calc(100 / 760 * 100%);
-	
+  display: flex;
+  background-color: $color-default-white;
+}
+
+.feedback-slider__button-wrapper {
+  position: relative;
+  background-color: $color-default-white;
+  width: 21%;
+  box-shadow: none;
+
+  @include mobile {
+    width: 34.5%;
+  }
+}
+
+.feedback-slider__button {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  background-color: transparent;
+  background-color: $color-default-white;
+  border: 3px solid $color-default-white;
+  border: none;
+  box-shadow: none;
+
+  @include mobile {
+    top: 45%;
+    bottom: auto;
+  }
+
+  svg {
+    @include mobile {
+      transform: scale(0.7);
+    }
+  }
+}
+
+.btn-prev {
+  right: 28px;
+
+  @include mobile {
+    right: 5px;
+  }
+}
+
+.btn-next {
+  left: 28px;
+
+  @include mobile {
+    left: 5px;
+  }
 }
 
 .feedback-slider__inner {
- width: calc(560 / 760 * 100%);
+  overflow: hidden;
+}
+
+.feedback-slider__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  box-shadow: none;
+}
+
+.feedback-slider__item {
+  background-color: $color-resolution-blue;
+  padding: 60px 60px 57px;
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  grid-template-rows: repeat(2, auto);
+  grid-column-gap: 28px;
+
+  p {
+    margin: 0;
+    font-family: $ff-roboto-regular;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    color: $color-default-white;
+
+    @include mobile {
+      &:last-child {
+        grid-column: 1 / -1;
+        text-align: center;
+      }
+    }
+
+    span {
+      display: block;
+      font-family: $ff-roboto-bold;
+      font-weight: 700;
+      font-size: 20px;
+      line-height: 18px;
+      margin-bottom: 20px;
+
+      @include mobile {
+        line-height: 26px;
+        padding-top: 14px;
+        margin-bottom: 24px;
+      }
+    }
+  }
+
+  @include tablet {
+    padding: 60px 65px 57px;
+  }
+
+  @include mobile {
+    grid-column-gap: 15px;
+    padding: 34px 28px 35px;
+  }
+}
+
+.feedback-slider__photo {
+  grid-column: 1 / 2;
+  grid-row: 1 / -1;
+  width: 80px;
+
+  @include mobile {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    width: 68px;
+    justify-self: end;
+    padding-top: 6px;
+  }
 }

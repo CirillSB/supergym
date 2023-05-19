@@ -21,6 +21,11 @@
     color: $color-default-white;
     margin: 0;
 
+
+  @include mobile {
+    text-align: center;
+  }
+
     dt {
       font-size: 28px;
       line-height: 44px;
@@ -31,6 +36,9 @@
       margin: 0;
       font-size: 70px;
       line-height: 109px;
+        @include mobile {
+margin-bottom: -6px;
+  }
     }
   }
 
@@ -41,12 +49,19 @@
     line-height: 25px;
     color: $color-default-white;
     margin: 0 0 182px;
+    @include mobile {
+
+        margin: 0 0 26px;
+  }
   }
     @include tablet {
     width: calc(279 / 678 * 100%);
   }
   @include mobile {
     width: 100%;
+    text-align: center;
+     
+    padding: 33px 45px 43px;
   }
 
 }
@@ -78,7 +93,8 @@
   }
 
   @include mobile {
-    width: 100%;
+    max-width: 100%;
+    // width: 100%;
   }
 }
 

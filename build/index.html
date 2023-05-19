@@ -335,7 +335,7 @@
                           <span class="games-promo-date__month">
                             Марта
                           </span>
-                          <span class="games-promo-date_year">
+                          <span class="games-promo-date__year">
                             2019
                           </span>
                         </div>
@@ -794,57 +794,57 @@
         <h2 class="promotions__title section-title">
           Акции
         </h2>
-        <div class="container">
-          <div class="promotions__wrapper">
-            <div class="promotions__inner annual-subscription">
-              <div class="annual-subscription__description">
-                <dl>
-                  <dt>Год</dt>
-                  <dd>4999</dd>
-                </dl>
-                <p>
-                  Безлимитный абонемент в тренажерный зал
-                </p>
-                <a class="annual-subscription__link" href="#">
-                  подробнее
-                </a>
-              </div>
-              <div class="annual-subscription__banner">
-                <picture class="annual-subscription__picture">
-                  <source type="image/webp" media="(min-width: 1200px)" srcset="img/girl-desktop@1x.webp 1x, img/girl-desktop@2x.webp 2x">
-                  <source type="image/webp" media="(min-width: 768px)" srcset="img/girl-tablet@1x.webp 1x, img/girl-tablet@2x.webp 2x">
-                  <source type="image/webp" srcset="img/girl-mobile@1x.webp 1x, img/girl-mobile@2x.webp 2x">
-                  <source media="(min-width: 1200px)" srcset="img/girl-desktop@1x.jpg 1x, img/girl-desktop@2x.jpg 2x">
-                  <source media="(min-width: 768px)" srcset="img/girl-tablet@1x.jpg 1x, img/girl-tablet@2x.jpg 2x">
-                  <img class="annual-subscription__image" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAACCAQAAAA3fa6RAAAADklEQVR42mNkAANGCAUAACMAA2w/AMgAAAAASUVORK5CYII=" data-src="img/girl-mobile@1x.jpg" srcset="img/girl-mobile@2x.jpg 2x" width="290" height="269" alt="Спортивная девушка.">
-                </picture>
-                <noscript>
-                  <img src="img/girl-mobile@1x.jpg" width="290" height="269" alt="Спортивная девушка.">
-                </noscript>
-              </div>
+        <!-- <div class="container"> -->
+        <div class="promotions__wrapper">
+          <div class="promotions__inner annual-subscription">
+            <div class="annual-subscription__description">
+              <dl>
+                <dt>Год</dt>
+                <dd>4999</dd>
+              </dl>
+              <p>
+                Безлимитный абонемент в&nbsp;тренажерный зал
+              </p>
+              <a class="annual-subscription__link" href="#">
+                подробнее
+              </a>
             </div>
-            <div class="promotions__inner promotions__inner--right">
-              <div class="discounts">
-                <dl>
-                  <dt>Месяц бесплатно</dt>
-                  <dd>Приведи друга, получи абонемент в подарок</dd>
-                </dl>
-                <a class="discounts__link" href="#">
-                  подробнее
-                </a>
-              </div>
-              <div class="discounts">
-                <dl>
-                  <dt>Скидка 20%</dt>
-                  <dd>Корпоративный фитнес с командой</dd>
-                </dl>
-                <a class="discounts__link" href="#">
-                  подробнее
-                </a>
-              </div>
+            <div class="annual-subscription__banner">
+              <picture class="annual-subscription__picture">
+                <source type="image/webp" media="(min-width: 1200px)" srcset="img/girl-desktop@1x.webp 1x, img/girl-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 768px)" srcset="img/girl-tablet@1x.webp 1x, img/girl-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/girl-mobile@1x.webp 1x, img/girl-mobile@2x.webp 2x">
+                <source media="(min-width: 1200px)" srcset="img/girl-desktop@1x.jpg 1x, img/girl-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/girl-tablet@1x.jpg 1x, img/girl-tablet@2x.jpg 2x">
+                <img class="annual-subscription__image" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAACCAQAAAA3fa6RAAAADklEQVR42mNkAANGCAUAACMAA2w/AMgAAAAASUVORK5CYII=" data-src="img/girl-mobile@1x.jpg" srcset="img/girl-mobile@2x.jpg 2x" width="290" height="269" alt="Спортивная девушка.">
+              </picture>
+              <noscript>
+                <img src="img/girl-mobile@1x.jpg" width="290" height="269" alt="Спортивная девушка.">
+              </noscript>
+            </div>
+          </div>
+          <div class="promotions__inner promotions__inner--right">
+            <div class="promotions__item discounts">
+              <dl>
+                <dt>Месяц бесплатно</dt>
+                <dd>Приведи друга, получи абонемент в&nbsp;подарок</dd>
+              </dl>
+              <a class="discounts__link" href="#">
+                подробнее
+              </a>
+            </div>
+            <div class="promotions__item discounts">
+              <dl>
+                <dt>Скидка 20%</dt>
+                <dd>Корпоративный фитнес с&nbsp;командой</dd>
+              </dl>
+              <a class="discounts__link" href="#">
+                подробнее
+              </a>
             </div>
           </div>
         </div>
+        <!-- </div> -->
       </section>
       <!-- ========================================================================================================================== -->
       <section class="feedback">
@@ -856,7 +856,14 @@
         <div class="feedback__slider feedback-slider">
           <div class="feedback-slider__wrapper">
             <div class="feedback-slider__button-wrapper">
-              <button class="feedback-slider__button btn-prev" type="button"></button>
+              <button class="feedback-slider__button btn-prev" type="button">
+                <span class="visually-hidden">
+                  Кнопка листать назад
+                </span>
+                <svg width="16" height="32">
+                  <use xlink:href="img/sprite.svg#prev"></use>
+                </svg>
+              </button>
             </div>
             <div class="feedback-slider__inner">
               <div class="feedback-slider__inner feedback-swiper">
@@ -900,8 +907,15 @@
                 </ul>
               </div>
             </div>
-            <div class="slider__button-wrapper">
-              <button class="feedback-slider__button btn-next" type="button"></button>
+            <div class="feedback-slider__button-wrapper">
+              <button class="feedback-slider__button btn-next" type="button">
+                <span class="visually-hidden">
+                  Кнопка листать вперёд
+                </span>
+                <svg width="16" height="32">
+                  <use xlink:href="img/sprite.svg#next"></use>
+                </svg>
+              </button>
             </div>
           </div>
         </div>
@@ -978,55 +992,55 @@
         </section>
       </div>
     </main>
-    <footer>
+    <footer class="footer">
       <!-- <div class="container"></div> -->
-    <div class="footer__wrapper">
-      <a href="#" class="footer__logo">
-        supergym
-      </a>
-    </div>
-    <ul class="footer__menu nav-list">
-      <li class="nav-list__item">
-        <a href="#" class="footer__link">
-          Услуги
+      <div class="footer__wrapper">
+        <a href="#" class="footer__logo">
+          supergym
         </a>
-      </li>
-            <li class="nav-list__item">
-        <a href="#" class="footer__link">
-          Абонементы
-        </a>
-      </li>
-            <li class="nav-list__item">
-        <a href="#" class="footer__link">
-          Акции
-        </a>
-      </li>
-            <li class="nav-list__item">
-        <a href="#" class="footer__link">
-          Тренеры
-        </a>
-      </li>
-            <li class="nav-list__item">
-        <a href="#" class="footer__link">
-          Расписание
-        </a>
-      </li>
-    </ul>
-    <ul class="footer__socials socials">
-      <li class="socials__item">
+      </div>
+      <ul class="footer__menu nav-list">
+        <li class="nav-list__item">
+          <a href="#" class="footer__link">
+            Услуги
+          </a>
+        </li>
+        <li class="nav-list__item">
+          <a href="#" class="footer__link">
+            Абонементы
+          </a>
+        </li>
+        <li class="nav-list__item">
+          <a href="#" class="footer__link">
+            Акции
+          </a>
+        </li>
+        <li class="nav-list__item">
+          <a href="#" class="footer__link">
+            Тренеры
+          </a>
+        </li>
+        <li class="nav-list__item">
+          <a href="#" class="footer__link">
+            Расписание
+          </a>
+        </li>
+      </ul>
+      <ul class="footer__socials socials">
+        <li class="socials__item">
           <svg width="25" height="25">
             <use xlink:href="img/sprite.svg#vk"></use>
-          </svg>        
-      </li>          
-      <svg width="25" height="25">
-            <use xlink:href="img/sprite.svg#ok"></use>
-          </svg>        
-      </li>          
-      <svg width="25" height="25">
-            <use xlink:href="img/sprite.svg#reddit"></use>
-          </svg>        
-      </li>
-    </ul>
+          </svg>
+        </li>
+        <svg width="25" height="25">
+          <use xlink:href="img/sprite.svg#ok"></use>
+        </svg>
+        </li>
+        <svg width="25" height="25">
+          <use xlink:href="img/sprite.svg#reddit"></use>
+        </svg>
+        </li>
+      </ul>
     </footer>
   </div>
   <!-- Модалки -->
@@ -1061,21 +1075,3 @@
 </body>
 
 </html>
-<!--                 <li class="feedback-slider__item swiper-slide">
-                  <div class="feedback-slider__photo">
-                    <picture class="feedback-slider__picture">
-                      <source type="image/webp" media="(min-width: 1200px)" srcset="img/Anna-Orlova-desktop@1x.webp 1x, img/Anna-Orlova-desktop@2x.webp 2x">
-                      <source type="image/webp" media="(min-width: 768px)" srcset="img/Anna-Orlova-tablet@1x.webp 1x, img/Anna-Orlova-tablet@2x.webp 2x">
-                      <source type="image/webp" srcset="img/Anna-Orlova-mobile@1x.webp 1x, img/Anna-Orlova-mobile@2x.webp 2x">
-                      <source media="(min-width: 1200px)" srcset="img/Anna-Orlova-desktop@1x.jpg 1x, img/Anna-Orlova-desktop@2x.jpg 2x">
-                      <source media="(min-width: 768px)" srcset="img/Anna-Orlova-tablet@1x.jpg 1x, img/Anna-Orlova-tablet@2x.jpg 2x">
-                      <img class="feedback-slider__image" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAACCAQAAAA3fa6RAAAADklEQVR42mNkAANGCAUAACMAA2w/AMgAAAAASUVORK5CYII=" data-src="img/games-mobile@1x.jpg" srcset="img/Anna-Orlova-mobile@2x.jpg 2x" width="226" height="274" alt="Посетитель зала Анна Орлова.">
-                    </picture>
-                    <noscript>
-                      <img src="img/Anna-Orlova-mobile@1x.jpg" width="226" height="274" alt="Посетитель зала Анна Орлова.">
-                    </noscript>
-                  </div>
-                  <p><span>Анна Орлова</span></p>
-                  <p>«Хожу в SuperClub уже больше года. Нравится, что в клубе всегда чисто, тренажеры обновляют, персонал дружелюбный. Зал просторный, даже в вечернее время нет очередей»
-                  </p>
-                </li>  -->
