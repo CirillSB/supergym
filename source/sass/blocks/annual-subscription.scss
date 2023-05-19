@@ -3,6 +3,7 @@
   grid-row: 1 / -1;
   display: flex;
   justify-content: space-between;
+  background-color: $color-torch-red;
 
   @include mobile {
     flex-direction: column;
@@ -41,10 +42,13 @@
     color: $color-default-white;
     margin: 0 0 182px;
   }
-
+    @include tablet {
+    width: calc(279 / 678 * 100%);
+  }
   @include mobile {
     width: 100%;
   }
+
 }
 
 .annual-subscription__link {
@@ -60,10 +64,17 @@
 
 .annual-subscription__banner {
   background-color: $color-persian-blue;
-  width: 50%;
+  max-width: 50%;
+  // object-fit: cover;
+  //   position: relative;
+  // top: 0;
+  // right: 0;
+  // bottom: 0;
+  // left: 0;
 
   @include tablet {
-    width: calc(399 / 678 * 100%);
+    // max-width: 50%;
+    max-width: calc(399 / 678 * 100%);
   }
 
   @include mobile {
@@ -73,9 +84,15 @@
 
 .annual-subscription__image {
   height: 100%;
+  // object-fit: cover;
+  //   position: relative;
+  // top: 0;
+  // right: 0;
+  // bottom: 0;
+  // left: 0;
 
   @include tablet {
     width: 100%;
-    object-fit: contain;
+    // object-fit: cover;
   }
 }

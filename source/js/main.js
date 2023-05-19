@@ -25,6 +25,9 @@ import {
 import {
   initDynamicAdaptive
 } from './modules/init-dynamic-adaptive';
+import {
+  setMaskTel
+} from './modules/set-mask-tel';
 
 // ---------------------------------
 
@@ -35,6 +38,7 @@ window.addEventListener('DOMContentLoaded', () => {
   // ---------------------------------
 
   iosVhFix();
+  setMaskTel();
 
   // Modules
   // ---------------------------------

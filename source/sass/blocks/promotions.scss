@@ -1,15 +1,26 @@
 .promotions {
-	padding: 101px 0;
-}
-.promotions__title {
-  text-align: center;
-  margin: 0 0 35px 0;
-    @include tablet {
+  padding: 93px 33px;
 
+  @include tablet {
+    // padding: 93px 33px;
+    padding: 93px 0;
   }
 
   @include mobile {
+  	 padding: 64px 0;
+  }
+}
 
+.promotions__title {
+  text-align: center;
+  margin: 0 0 40px 0;
+
+  @include tablet {
+    margin: 0 0 40px -9px;
+  }
+
+  @include mobile {
+  	margin: 0 0 42px -5px;
   }
 }
 
@@ -27,9 +38,19 @@
     align-items: center;
   }
 }
+
 .promotions__inner {
-	width: 96.5%;
+  width: 96.5%;
+
+  @include tablet {
+    width: 100%;
+    margin-bottom: 30px;
+
+  }
+
+  @include mobile {}
 }
+
 .promotions__inner--right {
   grid-column: 2 / -1;
   grid-row: 1 / -1;
