@@ -28,6 +28,8 @@
   grid-template-columns: repeat(2, 50%);
   grid-template-rows: repeat(2, 50%);
   grid-column-gap: 21px;
+  max-width: 1366px;
+  margin: 0 auto;
 
   @include tablet {
     display: flex;

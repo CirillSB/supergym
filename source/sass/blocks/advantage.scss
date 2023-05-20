@@ -39,10 +39,11 @@
   }
 
   &--parking {
+    position: relative;
+    left: -9px;
     justify-items: end;
     align-items: start;
     border-bottom: 2px solid rgba(209, 10, 66, 0.2);
-    bottom: 1px;
 
     @include tablet {
       grid-column: 3 / -1;
@@ -205,7 +206,7 @@
 }
 
 .advantage__title {
-  margin: -4px 0 4px;
+  margin: -7px 0 6px;
   font-family: $ff-roboto-bold;
   font-weight: 700;
   font-size: 22px;
@@ -215,7 +216,7 @@
   @include tablet {
     font-size: 20px;
     line-height: 30px;
-    margin-top: -4px;
+    margin: -5px 0 2px;
   }
 
   @include mobile {

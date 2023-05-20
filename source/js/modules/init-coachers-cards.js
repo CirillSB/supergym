@@ -11,6 +11,9 @@ export const initCoachersCards = () => {
         e.style.visibility = 'hidden';
         e.style.opacity = '0';
       });
+      title.forEach((e) => {
+        e.classList.remove('hidden');
+      })
     }
   };
 

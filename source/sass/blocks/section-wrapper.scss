@@ -3,13 +3,12 @@
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: 1fr;
-    @include tablet {
-    	display: flex;
-    	flex-direction: column;
-    	justify-content: flex-start;
-  }
+  max-width: 1366px;
+  margin: 0 auto;
 
-  @include mobile {
-
+  @include tablet {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
   }
 }

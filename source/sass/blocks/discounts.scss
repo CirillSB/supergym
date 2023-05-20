@@ -10,6 +10,12 @@
   justify-content: space-between;
   align-items: flex-start;
 
+  &--short {
+    @include tablet {
+      padding-right: 56px;
+    }
+  }
+
   @include mobile {
     align-items: center;
     padding: 35px 27px 40px;

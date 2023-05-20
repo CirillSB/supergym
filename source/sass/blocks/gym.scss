@@ -1,5 +1,7 @@
 .gym {
   position: relative;
+  max-width: 1366px;
+  margin: 0 auto;
 
   &::after {
     display: block;
@@ -83,7 +85,7 @@
 
     @include mobile {
       text-align: left;
-      padding-right: 10%;
+      padding-right: 11%;
       margin: 0 0 33px 0;
     }
 
@@ -124,9 +126,6 @@
   }
 
   @include mobile {
-    // position: relative;
-    // left: -15px;
-    // width: 100vw;
     height: auto;
     padding: 0;
   }

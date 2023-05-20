@@ -64,7 +64,7 @@
   }
 
   @include tablet {
-    padding: 53px 108px 59px;
+    padding: 53px 100px 59px;
   }
 
   @include mobile {
@@ -100,6 +100,14 @@
   letter-spacing: 0.05em;
   text-transform: uppercase;
   color: $color-sapphire;
+  
+    @include tablet {
+    max-width: 92%;
+  }
+
+  @include mobile {
+   max-width: 100%;
+  }
 
   &.focus-visible {
     outline: none;

@@ -28,7 +28,7 @@
       </div>
     </header>
     <main>
-      <section class="promo">
+      <section class="promo" id="promo">
         <div class="container">
           <div class="promo__inner">
             <div class="promo__textual">
@@ -103,7 +103,7 @@
           </div>
         </div>
       </section>
-      <section class="gym-membership">
+      <section class="gym-membership" id="membership">
         <div class="container">
           <div class="gym-membership__inner">
             <h2 class="gym-membership__title section-title">
@@ -375,7 +375,7 @@
           </div>
         </div>
       </section>
-      <section class="coaches">
+      <section class="coaches" id="coaches">
         <div class="container">
           <h2 class="coaches__title section-title">
             Тренеры
@@ -789,12 +789,10 @@
           </section>
         </div>
       </section>
-      <!-- ========================================================================================================================== -->
-      <section class="promotions">
+      <section class="promotions" id="promotions">
         <h2 class="promotions__title section-title">
           Акции
         </h2>
-        <!-- <div class="container"> -->
         <div class="promotions__wrapper">
           <div class="promotions__inner annual-subscription">
             <div class="annual-subscription__description">
@@ -824,7 +822,7 @@
             </div>
           </div>
           <div class="promotions__inner promotions__inner--right">
-            <div class="promotions__item discounts">
+            <div class="promotions__item discounts discounts--short">
               <dl>
                 <dt>Месяц бесплатно</dt>
                 <dd>Приведи друга, получи абонемент в&nbsp;подарок</dd>
@@ -844,9 +842,7 @@
             </div>
           </div>
         </div>
-        <!-- </div> -->
       </section>
-      <!-- ========================================================================================================================== -->
       <section class="feedback">
         <div class="container">
           <h2 class="feedback__title section-title">
@@ -993,54 +989,55 @@
       </div>
     </main>
     <footer class="footer">
-      <!-- <div class="container"></div> -->
       <div class="footer__wrapper">
-        <a href="#" class="footer__logo">
+        <a href="#promo" class="footer__logo" data-da=".nav-list__item--spare, 767, first">
           supergym
         </a>
+        <ul class="footer__menu nav-list">
+          <li class="nav-list__item nav-list__item--spare t__item--spare--order1"></li>
+          <li class="nav-list__item nav-list__item--order2">
+            <a href="#" class="footer__link">
+              Услуги
+            </a>
+          </li>
+          <li class="nav-list__item nav-list__item--order3">
+            <a href="#membership" class="footer__link">
+              Абонементы
+            </a>
+          </li>
+          <li class="nav-list__item nav-list__item--order4">
+            <a href="#promotions" class="footer__link">
+              Акции
+            </a>
+          </li>
+          <li class="nav-list__item nav-list__item--order5">
+            <a href="#coaches" class="footer__link">
+              Тренеры
+            </a>
+          </li>
+          <li class="nav-list__item nav-list__item--order6">
+            <a href="#" class="footer__link">
+              Расписание
+            </a>
+          </li>
+        </ul>
+        <ul class="footer__socials socials">
+          <li class="socials__item">
+            <svg width="25" height="25">
+              <use xlink:href="img/sprite.svg#vk"></use>
+            </svg>
+          </li>
+          <li class="socials__item">
+            <svg width="25" height="25">
+              <use xlink:href="img/sprite.svg#ok"></use>
+            </svg>
+          </li>
+          <li class="socials__item">
+            <svg width="25" height="25">
+              <use xlink:href="img/sprite.svg#reddit"></use>
+            </svg>
+        </ul>
       </div>
-      <ul class="footer__menu nav-list">
-        <li class="nav-list__item">
-          <a href="#" class="footer__link">
-            Услуги
-          </a>
-        </li>
-        <li class="nav-list__item">
-          <a href="#" class="footer__link">
-            Абонементы
-          </a>
-        </li>
-        <li class="nav-list__item">
-          <a href="#" class="footer__link">
-            Акции
-          </a>
-        </li>
-        <li class="nav-list__item">
-          <a href="#" class="footer__link">
-            Тренеры
-          </a>
-        </li>
-        <li class="nav-list__item">
-          <a href="#" class="footer__link">
-            Расписание
-          </a>
-        </li>
-      </ul>
-      <ul class="footer__socials socials">
-        <li class="socials__item">
-          <svg width="25" height="25">
-            <use xlink:href="img/sprite.svg#vk"></use>
-          </svg>
-        </li>
-        <svg width="25" height="25">
-          <use xlink:href="img/sprite.svg#ok"></use>
-        </svg>
-        </li>
-        <svg width="25" height="25">
-          <use xlink:href="img/sprite.svg#reddit"></use>
-        </svg>
-        </li>
-      </ul>
     </footer>
   </div>
   <!-- Модалки -->

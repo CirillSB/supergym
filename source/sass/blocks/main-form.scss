@@ -1,6 +1,5 @@
 .main-form {
   input {
-    // width: calc(190 / 410 * 100%);
     width: 100%;
     background-color: transparent;
     border: none;
@@ -8,10 +7,10 @@
     margin-bottom: 29px;
     padding: 2px 0 5px;
     font-family: $ff-roboto-regular;
-      font-weight: 400;
-      font-size: 14px;
-      line-height: 16px;
-      color: $color-default-white;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    color: $color-default-white;
 
     &::placeholder {
       font-family: $ff-roboto-regular;
@@ -21,13 +20,13 @@
       color: $color-default-white;
     }
 
+    @include mobile {
+      margin-bottom: 37px;
 
-  @include mobile {
-    margin-bottom: 37px;
-    &:last-child {
-    	margin-bottom: 0;
+      &:last-child {
+        margin-bottom: 0;
+      }
     }
-  }
   }
 
   button {
@@ -37,30 +36,34 @@
     color: $color-default-white;
     padding: 17px 0 16px;
     font-family: $ff-roboto-bold;
-font-weight: 700;
-font-size: 14px;
-line-height: 16px;
-letter-spacing: 0.05em;
-text-transform: uppercase;
-  @include mobile {
-padding-bottom: 15px;
-  }
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    cursor: pointer;
+
+    @include mobile {
+      padding-bottom: 15px;
+    }
   }
 }
+
 .main-form__inner {
-	display: grid;
-	grid-template-columns: repeat(2, 1fr);
-	grid-template-rows: auto;
-	grid-column-gap: 31px;
-	  @include tablet {
-grid-column-gap: 12.8%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: auto;
+  grid-column-gap: 31px;
+
+  @include tablet {
+    grid-column-gap: 12.8%;
   }
 
   @include mobile {
-display: flex;
-flex-direction: column;
-justify-content: flex-start;
-align-items: flex-start;
-margin-bottom: 2px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-bottom: 2px;
   }
 }

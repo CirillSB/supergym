@@ -1,6 +1,6 @@
 .advantages {
   background-color: $color-ghost-white;
-  padding: 96px calc(120 / 1051 * 100%) 139px calc(138 / 1051 * 100%);
+  padding: 96px 11.5% 139px 13.2%;
 
   @include tablet {
     padding: 92px calc(45 / 768 * 100%) 100px;
@@ -16,6 +16,8 @@
   grid-template-columns: 1fr 240px 1fr;
   grid-template-rows: repeat(2, 50%);
   grid-column-gap: 60px;
+  max-width: 1366px;
+  margin: 0 auto;
 
   @include tablet {
     grid-template-columns: repeat(4, auto);
@@ -36,7 +38,7 @@
   text-align: center;
 
   @include tablet {
-    margin: 0 0 48px -22px;
+    margin: 0 0 47px -22px;
   }
 
   @include mobile {
@@ -64,7 +66,7 @@
     @include tablet {
       grid-column: 1 / -1;
       grid-row: 2 / 3;
-      margin: 40px 17.4% 37px;
+      margin: 44px 17.4% 41px;
     }
 
     @include mobile {
