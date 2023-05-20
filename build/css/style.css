@@ -4432,6 +4432,157 @@ button.swiper-pagination-bullet {
   overflow: hidden;
 }
 
+.section-wrapper {
+  width: 100%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+  grid-template-columns: repeat(2, 1fr);
+  -ms-grid-rows: 1fr;
+  grid-template-rows: 1fr;
+}
+
+.feedback-form {
+  background-color: #102654;
+  padding: 55px 168px 50px 103px;
+}
+
+.feedback-form__title {
+  font-family: "AlumniSans-ExtraBold", "Arial", sans-serif;
+  font-weight: 800;
+  font-size: 54px;
+  line-height: 84px;
+  letter-spacing: 0.03em;
+  color: #ffffff;
+  margin: 0 0 18px 0;
+}
+
+.main-form input {
+  width: 100%;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid #74819c;
+  margin-bottom: 29px;
+  padding: 2px 0 5px;
+}
+
+.main-form input::-webkit-input-placeholder {
+  font-family: "RobotoCondensed-Regular", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: #ffffff;
+}
+
+.main-form input::-moz-placeholder {
+  font-family: "RobotoCondensed-Regular", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: #ffffff;
+}
+
+.main-form input:-ms-input-placeholder {
+  font-family: "RobotoCondensed-Regular", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: #ffffff;
+}
+
+.main-form input::-ms-input-placeholder {
+  font-family: "RobotoCondensed-Regular", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: #ffffff;
+}
+
+.main-form input::placeholder {
+  font-family: "RobotoCondensed-Regular", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: #ffffff;
+}
+
+.main-form button {
+  width: 100%;
+  background-color: transparent;
+  border: 3px solid #ffffff;
+  color: #ffffff;
+  padding: 17px 0 16px;
+  font-family: "RobotoCondensed-Bold", "Arial", sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.main-form__inner {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+  grid-template-columns: repeat(2, 1fr);
+  -ms-grid-rows: auto;
+  grid-template-rows: auto;
+  grid-column-gap: 31px;
+}
+
+.contacts {
+  padding: 56px 94px 63px 124px;
+}
+
+.contacts__inner {
+  position: relative;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+  grid-template-columns: repeat(2, 1fr);
+  -ms-grid-rows: (auto)[2];
+  grid-template-rows: repeat(2, auto);
+  grid-column-gap: 25%;
+  grid-row-gap: 22px;
+  grid-auto-flow: row;
+}
+
+.contacts__inner dl {
+  margin: 0;
+  color: #102654;
+}
+
+.contacts__inner dt {
+  margin-bottom: 1px;
+  font-family: "RobotoCondensed-Bold", "Arial", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.contacts__inner dd {
+  margin: 0;
+  font-family: "RobotoCondensed-Regular", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+}
+
+.contacts__inner::after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  top: 5px;
+  left: 49.5%;
+  height: 92%;
+  width: 1px;
+  background-color: #74819c;
+}
+
+.contacts__title {
+  margin: 0 0 37px -4px;
+}
+
 /* @mixin hover-focus {
     @media (hover: hover) {
       &:hover:not(.focus-visible) {
