@@ -1,5 +1,15 @@
 .contacts {
-  padding: 56px 94px 63px 124px;
+  padding: 55px 94px 63px 124px;
+  border-top: 1px solid $color-light-slate-grey;
+
+  @include tablet {
+    border-top: none;
+    padding: 62px 0 63px 17%;
+  }
+
+  @include mobile {
+    padding: 64px 15px 63px;
+  }
 }
 
 .contacts__inner {
@@ -11,25 +21,15 @@
   grid-row-gap: 22px;
   grid-auto-flow: row;
 
-  dl {
-    margin: 0;
-    color: $color-sapphire;
+  @include tablet {
+    grid-column-gap: 0;
   }
 
-  dt {
-    margin-bottom: 1px;
-    font-family: $ff-roboto-bold;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 24px;
-  }
-
-  dd {
-    margin: 0;
-    font-family: $ff-roboto-regular;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 21px;
+  @include mobile {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
   }
 
   &::after {
@@ -41,9 +41,87 @@
     height: 92%;
     width: 1px;
     background-color: $color-light-slate-grey;
+
+    @include tablet {
+      left: 42%;
+    }
+
+    @include mobile {
+    	content: none;
+    }
+  }
+}
+
+.contacts__descriptions {
+  margin: 0;
+  color: $color-sapphire;
+
+  @include tablet {
+    // padding-left: 50px;
+  }
+
+  @include mobile {
+  	margin-bottom: -3px;
+  }
+
+  dt {
+    margin-bottom: 1px;
+    font-family: $ff-roboto-bold;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    font-size: 20px;
+
+    @include tablet {
+      font-size: 20px;
+      line-height: 30px;
+      margin-bottom: 3px;
+    }
+
+    @include mobile {
+    	margin-bottom: 6px;
+    }
+
+  }
+
+  dd {
+    margin: 0;
+    font-family: $ff-roboto-regular;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+
+    @include tablet {
+      font-size: 18px;
+      line-height: 27px;
+
+    }
+
+    @include mobile {}
+  }
+  &--order1 {
+  	order: 1;
+  }
+    &--order2 {
+  	order: 3;
+  }
+    &--order3 {
+  	order: 2;
+  }
+    &--order4 {
+  	order: 4;
   }
 }
 
 .contacts__title {
   margin: 0 0 37px -4px;
+
+  @include tablet {
+    margin: 0 0 33px 2px;
+
+  }
+
+  @include mobile {
+    margin: 0 0 34px 0px;
+  }
 }

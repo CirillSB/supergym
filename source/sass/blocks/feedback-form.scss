@@ -1,6 +1,13 @@
 .feedback-form {
   background-color: $color-sapphire;
   padding: 55px 168px 50px 103px;
+      @include tablet {
+  padding: 61px 162px 68px 132px;
+  }
+
+  @include mobile {
+padding: 64px 15px 69px;
+  }
 }
 
 .feedback-form__title {
@@ -11,4 +18,16 @@
   letter-spacing: 0.03em;
   color: $color-default-white;
   margin: 0 0 18px 0;
+    @include tablet {
+font-size: 42px;
+line-height: 50px;
+  margin: 0 0 37px 0;
+  }
+
+  @include mobile {
+  	margin: 0 0 37px 1px;
+font-size: 32px;
+line-height: 38px;
+    letter-spacing: .014em;
+  }
 }

@@ -7,6 +7,11 @@
     border-bottom: 1px solid $color-light-slate-grey;
     margin-bottom: 29px;
     padding: 2px 0 5px;
+    font-family: $ff-roboto-regular;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 16px;
+      color: $color-default-white;
 
     &::placeholder {
       font-family: $ff-roboto-regular;
@@ -15,6 +20,14 @@
       line-height: 16px;
       color: $color-default-white;
     }
+
+
+  @include mobile {
+    margin-bottom: 37px;
+    &:last-child {
+    	margin-bottom: 0;
+    }
+  }
   }
 
   button {
@@ -29,6 +42,9 @@ font-size: 14px;
 line-height: 16px;
 letter-spacing: 0.05em;
 text-transform: uppercase;
+  @include mobile {
+padding-bottom: 15px;
+  }
   }
 }
 .main-form__inner {
@@ -36,4 +52,15 @@ text-transform: uppercase;
 	grid-template-columns: repeat(2, 1fr);
 	grid-template-rows: auto;
 	grid-column-gap: 31px;
+	  @include tablet {
+grid-column-gap: 12.8%;
+  }
+
+  @include mobile {
+display: flex;
+flex-direction: column;
+justify-content: flex-start;
+align-items: flex-start;
+margin-bottom: 2px;
+  }
 }
