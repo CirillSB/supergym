@@ -100,13 +100,13 @@
   letter-spacing: 0.05em;
   text-transform: uppercase;
   color: $color-sapphire;
-  
-    @include tablet {
+
+  @include tablet {
     max-width: 92%;
   }
 
   @include mobile {
-   max-width: 100%;
+    max-width: 100%;
   }
 
   &.focus-visible {

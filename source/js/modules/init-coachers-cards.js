@@ -13,7 +13,7 @@ export const initCoachersCards = () => {
       });
       title.forEach((e) => {
         e.classList.remove('hidden');
-      })
+      });
     }
   };
 
