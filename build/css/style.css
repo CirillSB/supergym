@@ -5079,7 +5079,7 @@ button.swiper-pagination-bullet {
   }
 
   .coaches {
-    padding: 58px 0 99px;
+    padding: 58px 0 68px;
   }
 
   .coaches__title {
@@ -5096,6 +5096,7 @@ button.swiper-pagination-bullet {
   }
 
   .slider__button {
+    top: 35%;
     -webkit-transform: scale(1);
     -ms-transform: scale(1);
     transform: scale(1);
@@ -5595,6 +5596,7 @@ button.swiper-pagination-bullet {
   }
 
   .slider__button {
+    top: 50%;
     -webkit-transform: scale(0.55);
     -ms-transform: scale(0.55);
     transform: scale(0.55);

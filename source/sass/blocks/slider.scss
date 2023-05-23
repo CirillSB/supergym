@@ -91,12 +91,16 @@
   border: none;
   background-color: $color-default-white;
   transform: scale(0.55);
-      @include tablet {
- transform: scale(1);
-    }
-    @include mobile {
-      transform: scale(0.55);
-    }
+
+  @include tablet {
+    top: 35%;
+    transform: scale(1);
+  }
+
+  @include mobile {
+    top: 50%;
+    transform: scale(0.55);
+  }
 
   &--prev {
     left: 0;
