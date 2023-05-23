@@ -91,12 +91,18 @@
   border: none;
   background-color: $color-default-white;
   transform: scale(0.55);
+      @include tablet {
+ transform: scale(1);
+    }
+    @include mobile {
+      transform: scale(0.55);
+    }
 
   &--prev {
     left: 0;
 
     @include tablet {
-      left: 24px;
+      left: 27px;
     }
 
     @include mobile {
@@ -108,10 +114,11 @@
     right: 0;
 
     @include tablet {
-      left: -24px;
+      left: -21px;
     }
 
     @include mobile {
+      // transform: scale(0.55);
       left: 0;
     }
   }

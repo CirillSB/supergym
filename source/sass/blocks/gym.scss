@@ -139,6 +139,7 @@
 
 .gym__image {
   width: 100%;
+  background-color: $color-hawkes-blue;
 }
 
 .gym__video {
@@ -204,6 +205,7 @@
 .webp-true .gym__video {
   &--poster {
     &::after {
+      background-color: $color-hawkes-blue;
       background-image: url("../img/poster-desktop@1x.webp");
 
       @include tablet {

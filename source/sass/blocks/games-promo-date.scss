@@ -1,7 +1,7 @@
 .games-promo-date {
   background-color: $color-torch-red;
   color: $color-default-white;
-  padding: 81px 77px 84px 76px;
+  padding: 81px 77px 85px 76px;
   font-family: $ff-roboto-regular;
   font-weight: 400;
   font-size: 14px;
@@ -124,6 +124,7 @@
   font-size: 18px;
   line-height: 27px;
   margin: 0 0 45px 0;
+  flex-grow: 1;
 
   @include tablet {
     font-size: 12px;
