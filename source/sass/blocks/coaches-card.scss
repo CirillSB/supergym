@@ -11,9 +11,9 @@
   visibility: hidden;
   opacity: 0;
 
-  @include tablet {
-    background: transparent;
-  }
+  // @include tablet {
+  //   background: transparent;
+  // }
 }
 
 .coaches-card__content {

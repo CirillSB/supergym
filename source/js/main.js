@@ -28,6 +28,9 @@ import {
 import {
   setMaskTel
 } from './modules/set-mask-tel';
+import {
+  initHover
+} from './modules/init-hover';
 
 // ---------------------------------
 
@@ -54,6 +57,7 @@ window.addEventListener('DOMContentLoaded', () => {
     form.init();
     initPlayer();
     initCoachersCards();
+    initHover();
   });
 });
 

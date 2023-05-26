@@ -8,6 +8,7 @@
     content: "";
     width: 100%;
     height: 115px;
+    // height: size(115px);
 
     @include tablet {
       height: 83px;
@@ -23,7 +24,7 @@
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  padding: 120px calc(103 / 1366 * 100%) 100px;
+  padding: 120px 7.5% 100px 7.5%;
 
   @include tablet {
     flex-direction: column;
@@ -42,7 +43,7 @@
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
-  padding: 39px 80px 50px 59px;
+  padding: 39px 76px 50px 59px;
 
   @include tablet {
     flex-direction: column;
@@ -144,24 +145,29 @@
 
 .gym__video {
   position: absolute;
-  bottom: 233px;
+  top: 295px;
   left: 53%;
   transform: translate(-50%, 50%);
-  width: 364px;
-  height: 228px;
+  width: size(364px);
+  height: size(228px);
+  max-width: 364px;
+  max-height: 228px;
   cursor: pointer;
 
   @include tablet {
-    bottom: 184px;
+    top: 503px;
     left: 50%;
-    width: calc(266 / 768 * 100%);
-    height: 167px;
+    width: size(475px); 
+    height: size(297px);
   }
 
   @include mobile {
     position: relative;
-    bottom: 44px;
     width: 100vw;
+    height: size(713px);
+    transform: none;
+    top: 40px;
+    left: 0;
   }
 
   &--poster {
@@ -175,6 +181,8 @@
       display: inline-block;
       width: 100%;
       height: 100%;
+      top: 0;
+      left: 0;
 
 
       @include tablet {

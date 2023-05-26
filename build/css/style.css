@@ -1514,7 +1514,7 @@ button,
 
 .container {
   width: 84.7730600293%;
-  max-width: 1920px;
+  max-width: 1366px;
   margin: 0 auto;
 }
 
@@ -2359,7 +2359,7 @@ button,
   -webkit-box-align: start;
   -ms-flex-align: start;
   align-items: flex-start;
-  padding: 120px 7.5402635432% 100px;
+  padding: 120px 7.5% 100px 7.5%;
 }
 
 .gym__description {
@@ -2376,7 +2376,7 @@ button,
   -webkit-box-align: start;
   -ms-flex-align: start;
   align-items: flex-start;
-  padding: 39px 80px 50px 59px;
+  padding: 39px 76px 50px 59px;
 }
 
 .gym__description b {
@@ -2425,13 +2425,15 @@ button,
 
 .gym__video {
   position: absolute;
-  bottom: 233px;
+  top: 295px;
   left: 53%;
   -webkit-transform: translate(-50%, 50%);
   -ms-transform: translate(-50%, 50%);
   transform: translate(-50%, 50%);
-  width: 364px;
-  height: 228px;
+  width: 26.6471449488vw;
+  height: 16.6910688141vw;
+  max-width: 364px;
+  max-height: 228px;
   cursor: pointer;
 }
 
@@ -2445,6 +2447,8 @@ button,
   display: inline-block;
   width: 100%;
   height: 100%;
+  top: 0;
+  left: 0;
 }
 
 .webp-true .gym__video--poster::after {
@@ -2668,7 +2672,7 @@ button,
 .card {
   position: relative;
   background-color: #ffffff;
-  padding: 51px 67px 59px;
+  padding: 51px 18.6% 59px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -3069,9 +3073,6 @@ button,
   height: 100%;
   border: none;
   background-color: #ffffff;
-  -webkit-transform: scale(0.55);
-  -ms-transform: scale(0.55);
-  transform: scale(0.55);
 }
 
 .slider__button--prev {
@@ -3150,7 +3151,8 @@ button,
 }
 
 .hidden {
-  display: none;
+  opacity: 0;
+  visibility: hidden;
 }
 
 .advantage {
@@ -3559,7 +3561,7 @@ button,
 }
 
 .btn-next {
-  left: 28px;
+  left: 33px;
 }
 
 .feedback-slider__inner {
@@ -4764,6 +4766,11 @@ button.swiper-pagination-bullet {
   margin: 0;
 }
 
+.hover {
+  visibility: visible;
+  opacity: 1;
+}
+
 /* @mixin hover-focus {
     @media (hover: hover) {
       &:hover:not(.focus-visible) {
@@ -4928,10 +4935,10 @@ button.swiper-pagination-bullet {
   }
 
   .gym__video {
-    bottom: 184px;
+    top: 503px;
     left: 50%;
-    width: 34.6354166667%;
-    height: 167px;
+    width: 34.7730600293vw;
+    height: 21.7423133236vw;
   }
 
   .gym__video--poster::after {
@@ -5110,10 +5117,6 @@ button.swiper-pagination-bullet {
     left: -21px;
   }
 
-  .coaches-card {
-    background: transparent;
-  }
-
   .coaches-card__list {
     padding: 0 3% 0 27%;
   }
@@ -5282,6 +5285,10 @@ button.swiper-pagination-bullet {
 
   .feedback__slider {
     width: 91.7%;
+  }
+
+  .btn-prev {
+    left: 6px;
   }
 
   .feedback-slider__item {
@@ -5483,8 +5490,13 @@ button.swiper-pagination-bullet {
 
   .gym__video {
     position: relative;
-    bottom: 44px;
     width: 100vw;
+    height: 52.196193265vw;
+    -webkit-transform: none;
+    -ms-transform: none;
+    transform: none;
+    top: 40px;
+    left: 0;
   }
 
   .gym__video--poster::after {

@@ -39,13 +39,16 @@
 .btn-prev {
   right: 28px;
 
-  @include mobile {
+  @include tablet {
+        left: 6px;
+  }
+    @include mobile {
     right: 5px;
   }
 }
 
 .btn-next {
-  left: 28px;
+  left: 33px;
 
   @include mobile {
     left: 5px;
