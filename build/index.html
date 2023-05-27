@@ -930,75 +930,79 @@
         </div>
       </section>
       <div class="section-wrapper">
-        <section class="feedback-form">
-          <h2 class="feedback-form__title">
-            Бесплатное занятие
-          </h2>
-          <form class="main-form" action="https://echo.htmlacademy.ru/" method="POST" autocomplete="off">
-            <div class="main-form__inner">
-              <input id="user-name" type="text" name="name" placeholder="Имя" required>
-              <label class="visually-hidden" for="user-name">
-                Имя пользователя
-              </label>
-              <input id="user-phone" type="tel" name="phone" placeholder="Телефон" data-tel-input required>
-              <label class="visually-hidden" for="user-phone">
-                Телефон пользователя
-              </label>
+        <div class="section-inner section-inner--form">
+          <section class="section-inner__item feedback-form">
+            <h2 class="feedback-form__title">
+              Бесплатное занятие
+            </h2>
+            <form class="main-form" action="https://echo.htmlacademy.ru/" method="POST" autocomplete="off">
+              <div class="main-form__inner">
+                <input id="user-name" type="text" name="name" placeholder="Имя" required>
+                <label class="visually-hidden" for="user-name">
+                  Имя пользователя
+                </label>
+                <input id="user-phone" type="tel" name="phone" placeholder="Телефон" data-tel-input required>
+                <label class="visually-hidden" for="user-phone">
+                  Телефон пользователя
+                </label>
+              </div>
+              <button type="submit" name="button">
+                отправить
+              </button>
+            </form>
+          </section>
+        </div>
+        <div class="section-inner section-inner--contacts">
+          <section class="section-inner__item contacts">
+            <h2 class="contacts__title section-title ">
+              Контакты
+            </h2>
+            <div class="contacts__inner">
+              <dl class="contacts__descriptions contacts__descriptions--order1">
+                <dt>
+                  Адрес:
+                </dt>
+                <dd>
+                  г. Омск, ул. 60 лет Октября, 7
+                </dd>
+              </dl>
+              <dl class="contacts__descriptions contacts__descriptions--order2">
+                <dt>
+                  Телефон:
+                </dt>
+                <dd>
+                  <a href="tel:+88005555555">
+                    <span class="visually-hidden">
+                      Наш телефон
+                    </span>
+                    8-800-555-55-55
+                  </a>
+                </dd>
+              </dl>
+              <dl class="contacts__descriptions contacts__descriptions--order3">
+                <dt>
+                  График работы:
+                </dt>
+                <dd>
+                  Пн-Вс: с 8:00 до 22:00
+                </dd>
+              </dl>
+              <dl class="contacts__descriptions contacts__descriptions--order4">
+                <dt>
+                  Email:
+                </dt>
+                <dd>
+                  <a href="mailto:omsk@supergym.ru">
+                    <span class="visually-hidden">
+                      Наша почта
+                    </span>
+                    omsk@supergym.ru
+                  </a>
+                </dd>
+              </dl>
             </div>
-            <button type="submit" name="button">
-              отправить
-            </button>
-          </form>
-        </section>
-        <section class="contacts">
-          <h2 class="contacts__title section-title ">
-            Контакты
-          </h2>
-          <div class="contacts__inner">
-            <dl class="contacts__descriptions contacts__descriptions--order1">
-              <dt>
-                Адрес:
-              </dt>
-              <dd>
-                г. Омск, ул. 60 лет Октября, 7
-              </dd>
-            </dl>
-            <dl class="contacts__descriptions contacts__descriptions--order2">
-              <dt>
-                Телефон:
-              </dt>
-              <dd>
-                <a href="tel:+88005555555">
-                  <span class="visually-hidden">
-                    Наш телефон
-                  </span>
-                  8-800-555-55-55
-                </a>
-              </dd>
-            </dl>
-            <dl class="contacts__descriptions contacts__descriptions--order3">
-              <dt>
-                График работы:
-              </dt>
-              <dd>
-                Пн-Вс: с 8:00 до 22:00
-              </dd>
-            </dl>
-            <dl class="contacts__descriptions contacts__descriptions--order4">
-              <dt>
-                Email:
-              </dt>
-              <dd>
-                <a href="mailto:omsk@supergym.ru">
-                  <span class="visually-hidden">
-                    Наша почта
-                  </span>
-                  omsk@supergym.ru
-                </a>
-              </dd>
-            </dl>
-          </div>
-        </section>
+          </section>
+        </div>
       </div>
     </main>
     <footer class="footer">

@@ -14,11 +14,13 @@
   width: 1164px;
 
   @include tablet {
-    width: 567px;
+    // width: 567px;
+    width: calc(567 / 768 * 100%);
   }
 
   @include mobile {
-    width: 226px;
+    // width: 226px;
+    width: calc(226 / 320 * 100%);
   }
 }
 
@@ -61,7 +63,6 @@
     font-size: 18px;
     line-height: 27px;
     color: $color-default-white;
-    // z-index: 1000;
   }
 }
 
@@ -89,7 +90,6 @@
   height: 100%;
   border: none;
   background-color: $color-default-white;
-  // transform: scale(0.55);
 
   @include tablet {
     top: 35%;
@@ -121,7 +121,6 @@
     }
 
     @include mobile {
-      // transform: scale(0.55);
       left: 0;
     }
   }

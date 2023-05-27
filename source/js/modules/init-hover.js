@@ -37,7 +37,8 @@ export const initHover = () => {
   // }
   const hideCard = () => {
     for (let i = 0; i < cardsDescriptions.length; i++) {
-      if (event.target === cardsDescriptions[i] || event.relatedTarget === gallery && event.relatedTarget === cardsDescriptions[i + 1]) {
+      if (event.target === cardsDescriptions[i] && (event.relatedTarget === gallery || event.relatedTarget === slider)) {
+        console.log('obj');
         cardsDescriptions[i].classList.remove('hover');
         if (title[i].classList.contains('hidden')) {
           title[i].classList.remove('hidden');

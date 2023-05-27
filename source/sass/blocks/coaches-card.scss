@@ -10,10 +10,13 @@
   padding: 51px 2px 52px;
   visibility: hidden;
   opacity: 0;
+   overflow: auto;
 
-  // @include tablet {
-  //   background: transparent;
-  // }
+  @include tablet {}
+
+  @include mobile {
+    padding: 42px 2px 0;
+  }
 }
 
 .coaches-card__content {
@@ -22,6 +25,7 @@
   justify-content: flex-start;
   align-items: center;
 
+
   span {
     margin-bottom: 29px;
     font-family: $ff-roboto-regular;
@@ -29,6 +33,15 @@
     font-size: 16px;
     line-height: 24px;
     color: $color-spindle;
+    text-align: center;
+
+    @include tablet {}
+
+    @include mobile {
+      margin-bottom: 32px;
+      font-size: size(68px);
+      line-height: size(102px);
+    }
   }
 }
 
@@ -39,6 +52,14 @@
   line-height: 27px;
   text-align: center;
   margin: 0 0 1px 0;
+
+  @include tablet {}
+
+  @include mobile {
+    margin: 0 0 -3px 0;
+    font-size: size(77px);
+    line-height: size(115px);
+  }
 }
 
 .coaches-card__list {
@@ -47,10 +68,17 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 21px;
+
   list-style-type: disc;
 
   @include tablet {
     padding: 0 3% 0 27%;
+  }
+
+  @include mobile {
+    padding: 0 3% 0 21%;
+    font-size: size(60px);
+    line-height: size(90px);
   }
 }
 
@@ -59,5 +87,17 @@
 
   &:last-child {
     margin-bottom: 0;
+  }
+
+  &::marker {
+    @include mobile {
+      display: inline-block;
+      position: relative;
+      top: 0;
+      left: 0;
+      font-size: size(60px);
+      line-height: size(90px);
+    }
+
   }
 }

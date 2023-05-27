@@ -8,7 +8,6 @@
     content: "";
     width: 100%;
     height: 115px;
-    // height: size(115px);
 
     @include tablet {
       height: 83px;
@@ -157,17 +156,21 @@
   @include tablet {
     top: 503px;
     left: 50%;
-    width: size(475px); 
+    width: size(475px);
     height: size(297px);
   }
 
   @include mobile {
     position: relative;
-    width: 100vw;
+    width: 100%;
+    
     height: size(713px);
+    max-width: 100vw;
+    max-height: 100vh;
     transform: none;
     top: 40px;
     left: 0;
+
   }
 
   &--poster {
@@ -183,7 +186,6 @@
       height: 100%;
       top: 0;
       left: 0;
-
 
       @include tablet {
         background-image: url("../img/poster-tablet@1x.jpg");

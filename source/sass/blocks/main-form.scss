@@ -20,6 +20,9 @@
       color: $color-default-white;
     }
 
+    @include tablet {
+      margin-bottom: 28px;
+    }
     @include mobile {
       margin-bottom: 37px;
 
@@ -64,6 +67,6 @@
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
-    margin-bottom: 2px;
+    margin-bottom: 1px;
   }
 }

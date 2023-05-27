@@ -40,10 +40,12 @@
   right: 28px;
 
   @include tablet {
-        left: 6px;
+    left: 6px;
   }
-    @include mobile {
-    right: 5px;
+
+  @include mobile {
+    left: 4px;
+    // right: 5px;
   }
 }
 
@@ -51,7 +53,7 @@
   left: 33px;
 
   @include mobile {
-    left: 5px;
+    left: 9px;
   }
 }
 
@@ -70,7 +72,7 @@
   background-color: $color-resolution-blue;
   padding: 60px 60px 57px;
   display: grid;
-  grid-template-columns: repeat(2, auto);
+  grid-template-columns: auto 1fr;
   grid-template-rows: repeat(2, auto);
   grid-column-gap: 28px;
 
@@ -124,7 +126,8 @@
     grid-column: 1 / 2;
     grid-row: 1 / 2;
     width: 68px;
-    justify-self: end;
+    justify-self: start;
     padding-top: 6px;
+    margin-left: 13px;
   }
 }
