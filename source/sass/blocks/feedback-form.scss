@@ -1,10 +1,7 @@
 .feedback-form {
   padding: 55px 168px 50px 103px;
-  // padding: 55px size(168px) 50px size(103px);
-  // height: 100%;
 
   @include tablet {
-    // padding: 61px 162px 67px 132px;
     padding: 62px 162px 68px 132px;
   }
 

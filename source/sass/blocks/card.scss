@@ -1,7 +1,8 @@
 .card {
   position: relative;
   background-color: $color-default-white;
-  padding: 51px 18.6% 59px;
+  // padding: 51px 18.6% 59px;
+  padding: 51px 0 59px;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -68,7 +69,7 @@
   }
 
   @include mobile {
-    padding: 41px 35px 41px;
+    padding: 41px 35px 46px;
   }
 }
 
@@ -89,7 +90,7 @@
 
 .card__link {
   display: inline-block;
-  width: 100%;
+  width: 60%;
   text-align: center;
   padding: 24px 0;
   outline: 2px solid $color-sapphire;
@@ -102,6 +103,7 @@
   color: $color-sapphire;
 
   @include tablet {
+    width: 100%;
     max-width: 92%;
   }
 

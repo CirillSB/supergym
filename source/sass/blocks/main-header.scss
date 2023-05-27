@@ -26,4 +26,17 @@
 .main-header__logo {
   margin: 0 0 0 -1px;
   padding: 0;
+  height: 100%;
+}
+
+.main-header__links {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.main-header__link {
+  display: inline-block;
+  padding-left: 15px;
 }

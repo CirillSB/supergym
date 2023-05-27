@@ -9,8 +9,8 @@
   }
 
   @include mobile {
-    background: linear-gradient(to bottom, $color-ghost-white 95%, $color-transparent 95%);
-    padding: 64px 0 145px;
+    background: $color-ghost-white;
+    padding: 64px 0 69px;
   }
 }
 
@@ -53,6 +53,7 @@
   width: 100%;
   margin: 0;
   padding: 0;
+
 }
 
 .gym-membership__card-list {
@@ -62,13 +63,19 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: auto;
-    gap: calc(40 / 1160 * 100%);
+    grid-auto-flow: row;
+    grid-column-gap: calc(40 / 1160 * 100%);
+    grid-row-gap: 30px;
 
     @include tablet {
       display: flex;
       flex-direction: column;
       justify-content: flex-start;
       align-items: center;
+    }
+
+    @include mobile {
+      gap: 0;
     }
   }
 }
@@ -78,7 +85,7 @@
 
   @include tablet {
     width: 65%;
-    margin-bottom: 40px;
+    margin-bottom: 10px;
 
     &:last-child {
       margin-bottom: 0;
@@ -86,7 +93,12 @@
   }
 
   @include mobile {
+    margin-bottom: 35px;
     width: 100%;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
   }
 }
 

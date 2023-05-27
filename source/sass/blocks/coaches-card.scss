@@ -10,9 +10,7 @@
   padding: 51px 2px 52px;
   visibility: hidden;
   opacity: 0;
-   overflow: auto;
-
-  @include tablet {}
+  overflow: auto;
 
   @include mobile {
     padding: 42px 2px 0;
@@ -25,7 +23,6 @@
   justify-content: flex-start;
   align-items: center;
 
-
   span {
     margin-bottom: 29px;
     font-family: $ff-roboto-regular;
@@ -34,8 +31,6 @@
     line-height: 24px;
     color: $color-spindle;
     text-align: center;
-
-    @include tablet {}
 
     @include mobile {
       margin-bottom: 32px;
@@ -53,8 +48,6 @@
   text-align: center;
   margin: 0 0 1px 0;
 
-  @include tablet {}
-
   @include mobile {
     margin: 0 0 -3px 0;
     font-size: size(77px);
@@ -68,7 +61,6 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 21px;
-
   list-style-type: disc;
 
   @include tablet {
@@ -98,6 +90,5 @@
       font-size: size(60px);
       line-height: size(90px);
     }
-
   }
 }

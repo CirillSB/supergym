@@ -2211,6 +2211,26 @@ button,
 .main-header__logo {
   margin: 0 0 0 -1px;
   padding: 0;
+  height: 100%;
+}
+
+.main-header__links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.main-header__link {
+  display: inline-block;
+  padding-left: 15px;
 }
 
 .logo {
@@ -2527,7 +2547,9 @@ button,
   grid-template-columns: repeat(3, 1fr);
   -ms-grid-rows: auto;
   grid-template-rows: auto;
-  gap: 3.4482758621%;
+  grid-auto-flow: row;
+  grid-column-gap: 3.4482758621%;
+  grid-row-gap: 30px;
 }
 
 .gym-membership__card-list-item {
@@ -2672,7 +2694,7 @@ button,
 .card {
   position: relative;
   background-color: #ffffff;
-  padding: 51px 18.6% 59px;
+  padding: 51px 0 59px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2739,7 +2761,7 @@ button,
 
 .card__link {
   display: inline-block;
-  width: 100%;
+  width: 60%;
   text-align: center;
   padding: 24px 0;
   outline: 2px solid #102654;
@@ -3153,8 +3175,7 @@ button,
 }
 
 .hidden {
-  opacity: 0;
-  visibility: hidden;
+  display: none;
 }
 
 .advantage {
@@ -5006,7 +5027,7 @@ button.swiper-pagination-bullet {
 
   .gym-membership__card-list-item {
     width: 65%;
-    margin-bottom: 40px;
+    margin-bottom: 10px;
   }
 
   .gym-membership__card-list-item:last-child {
@@ -5040,6 +5061,7 @@ button.swiper-pagination-bullet {
   }
 
   .card__link {
+    width: 100%;
     max-width: 92%;
   }
 
@@ -5110,7 +5132,7 @@ button.swiper-pagination-bullet {
   }
 
   .coaches {
-    padding: 58px 0 99px;
+    padding: 58px 0 68px;
   }
 
   .coaches__title {
@@ -5551,18 +5573,25 @@ button.swiper-pagination-bullet {
   }
 
   .gym-membership {
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(95%, #f8f9fc), color-stop(95%, rgba(255, 255, 255, 0)));
-    background: -o-linear-gradient(top, #f8f9fc 95%, rgba(255, 255, 255, 0) 95%);
-    background: linear-gradient(to bottom, #f8f9fc 95%, rgba(255, 255, 255, 0) 95%);
-    padding: 64px 0 145px;
+    background: #f8f9fc;
+    padding: 64px 0 69px;
   }
 
   .gym-membership__pagination {
     margin-bottom: 34px;
   }
 
+  .gym-membership__card-list.is-active {
+    gap: 0;
+  }
+
   .gym-membership__card-list-item {
+    margin-bottom: 35px;
     width: 100%;
+  }
+
+  .gym-membership__card-list-item:last-child {
+    margin-bottom: 0;
   }
 
   .section-title {
@@ -5590,7 +5619,7 @@ button.swiper-pagination-bullet {
   }
 
   .card {
-    padding: 41px 35px 41px;
+    padding: 41px 35px 46px;
   }
 
   .card__title {
@@ -5607,6 +5636,10 @@ button.swiper-pagination-bullet {
     top: 108px;
     font-size: 80px;
     line-height: 120px;
+  }
+
+  .super-games {
+    padding-top: 71px;
   }
 
   .super-games__inner {

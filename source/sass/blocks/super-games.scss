@@ -1,6 +1,10 @@
 .super-games {
   max-width: 1366px;
   margin: 0 auto;
+
+  @include mobile {
+    padding-top: 71px;
+  }
 }
 
 .super-games__inner {
@@ -38,15 +42,16 @@
 .super-games__picture {
   height: 100%;
 }
+
 .super-games__img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
+
 .super-games__date {
   height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  // align-items: flex-start;
 }

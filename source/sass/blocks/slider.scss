@@ -14,12 +14,10 @@
   width: 1164px;
 
   @include tablet {
-    // width: 567px;
     width: calc(567 / 768 * 100%);
   }
 
   @include mobile {
-    // width: 226px;
     width: calc(226 / 320 * 100%);
   }
 }
@@ -49,7 +47,6 @@
   //     visibility: hidden;
   //   }
   // }
-
   p {
     width: 100%;
     position: absolute;
