@@ -81,6 +81,20 @@
   padding: 20px 54px 19px 54px;
   border: 4px solid $color-default-white;
 
+  @include hover-focus {
+    @media (hover: hover) {
+      &:hover:not(.focus-visible) {
+        background-color: $color-default-white;
+        color: $color-cobalt;
+      }
+    }
+
+    &.focus-visible:focus {
+      background-color: $color-default-white;
+      color: $color-cobalt;
+    }
+  }
+
   @include tablet {
     padding: 20px 30px 19px;
   }

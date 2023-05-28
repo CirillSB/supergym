@@ -76,6 +76,20 @@
   text-transform: uppercase;
   color: $color-default-white;
   border-bottom: 1px solid $color-default-white;
+
+  @include hover-focus {
+    @media (hover: hover) {
+      &:hover:not(.focus-visible) {
+        background-color: $color-default-white;
+        color: $color-torch-red;
+      }
+    }
+
+    &.focus-visible:focus {
+      background-color: $color-default-white;
+      color: $color-torch-red;
+    }
+  }
 }
 
 .annual-subscription__banner {

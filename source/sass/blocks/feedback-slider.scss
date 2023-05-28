@@ -23,6 +23,15 @@
   z-index: 100;
   background-color: $color-default-white;
   border: none;
+  cursor: pointer;
+
+  @include hover-focus {
+    @media (hover: hover) {
+      &:hover:not(.focus-visible) {
+        outline: 1px solid $color-cobalt;
+      }
+    }
+  }
 
   @include mobile {
     top: 45%;

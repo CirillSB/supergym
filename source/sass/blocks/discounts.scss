@@ -71,4 +71,18 @@
   text-transform: uppercase;
   color: $color-resolution-blue;
   border-bottom: 1px solid $color-resolution-blue;
+
+  @include hover-focus {
+    @media (hover: hover) {
+      &:hover:not(.focus-visible) {
+        background-color: $color-cobalt;
+        color: $color-default-white;
+      }
+    }
+
+    &.focus-visible:focus {
+        background-color: $color-cobalt;
+        color: $color-default-white;
+    }
+  }
 }

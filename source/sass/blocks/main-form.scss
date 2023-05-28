@@ -47,6 +47,20 @@
     text-transform: uppercase;
     cursor: pointer;
 
+    @include hover-focus {
+      @media (hover: hover) {
+        &:hover:not(.focus-visible) {
+          background-color: $color-default-white;
+          color: $color-cobalt;
+        }
+      }
+
+      &.focus-visible:focus {
+        background-color: $color-default-white;
+        color: $color-cobalt;
+      }
+    }
+
     @include mobile {
       padding-bottom: 15px;
     }

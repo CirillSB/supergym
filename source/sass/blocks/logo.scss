@@ -1,21 +1,22 @@
 .logo {
-  font-family: $ff-alumni-semi-bold;
-  font-weight: 600;
-  font-size: 36px;
-  line-height: 43px;
-  letter-spacing: 0.02em;
-  text-transform: uppercase;
-
-  color: $color-default-white;
+  padding-top: 10px;
 
   @include tablet {
-    font-size: 24px;
-    line-height: 29px;
+    padding-top: 0;
+
+    svg {
+      position: relative;
+      top: 0;
+      left: -18px;
+      transform: scale(0.67);
+    }
   }
 
   @include mobile {
-    font-size: 20px;
-    line-height: 24px;
-    padding-left: 3px;
+    svg {
+      top: -4px;
+      left: -24px;
+      transform: scale(0.55);
+    }
   }
 }

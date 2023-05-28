@@ -22,3 +22,19 @@
     }
   }
 }
+
+.socials__link {
+  @include hover-focus {
+    @media (hover: hover) {
+      &:hover:not(.focus-visible) {
+        border-radius: 50%;
+        box-shadow: 0 -9px 10px $color-default-white;
+      }
+    }
+
+    &.focus-visible:focus {
+      border-radius: 50%;
+      box-shadow: 0 0 10px $color-default-white;
+    }
+  }
+}

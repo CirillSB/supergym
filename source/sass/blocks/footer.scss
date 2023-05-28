@@ -43,6 +43,20 @@
   color: $color-default-white;
   margin-right: 10px;
 
+  @include hover-focus {
+    @media (hover: hover) {
+      &:hover:not(.focus-visible) {
+        background-color: $color-default-white;
+        color: $color-black-russian;
+      }
+    }
+
+    &.focus-visible:focus {
+      background-color: $color-default-white;
+      color: $color-black-russian;
+    }
+  }
+
   @include tablet {
     font-size: 24px;
     line-height: 29px;
@@ -61,6 +75,20 @@
   font-size: 14px;
   line-height: 16px;
   color: $color-default-white;
+
+  @include hover-focus {
+    @media (hover: hover) {
+      &:hover:not(.focus-visible) {
+        background-color: $color-default-white;
+        color: $color-black-russian;
+      }
+    }
+
+    &.focus-visible:focus {
+      background-color: $color-default-white;
+      color: $color-black-russian;
+    }
+  }
 
   @include mobile {
     font-size: 16px;
