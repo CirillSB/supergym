@@ -36,28 +36,10 @@
   }
 }
 
-.btn-prev {
-  right: 28px;
-
-  @include tablet {
-    left: 6px;
-  }
-
-  @include mobile {
-    left: 4px;
-  }
-}
-
-.btn-next {
-  left: 33px;
-
-  @include mobile {
-    left: 9px;
-  }
-}
-
 .feedback-slider__inner {
   overflow: hidden;
+  display: flex;
+  align-items: flex-start;
 }
 
 .feedback-slider__list {

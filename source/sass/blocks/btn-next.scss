@@ -1,0 +1,7 @@
+.btn-next {
+  left: 33px;
+
+  @include mobile {
+    left: 9px;
+  }
+}

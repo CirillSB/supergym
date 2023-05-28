@@ -35,18 +35,30 @@
     width: 268px;
   }
 
-  // &:hover,
-  // &:focus {
-  //   .coaches-card {
-  //     visibility: visible;
-  //     opacity: 1;
-  //   }
+  &:hover {
+    .coaches-card {
+      visibility: visible;
+      opacity: 1;
+    }
 
-  //   p {
-  //     opacity: 0;
-  //     visibility: hidden;
-  //   }
-  // }
+    p {
+      opacity: 0;
+      visibility: hidden;
+    }
+  }
+
+  &:focus {
+    .coaches-card {
+      visibility: visible;
+      opacity: 1;
+    }
+
+    p {
+      opacity: 0;
+      visibility: hidden;
+    }
+  }
+
   p {
     width: 100%;
     position: absolute;

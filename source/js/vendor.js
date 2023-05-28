@@ -67,4 +67,5 @@ let mySwiper = new Swiper('.feedback-swiper', {
   // },
   slidesPerView: 1,
   spaceBetween: 40,
+  autoHeight: true,
 });

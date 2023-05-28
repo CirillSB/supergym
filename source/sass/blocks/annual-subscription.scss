@@ -57,12 +57,12 @@
 
   @include tablet {
     width: calc(279 / 678 * 100%);
+    padding: 32px 45px 45px;
   }
 
   @include mobile {
     width: 100%;
     text-align: center;
-
     padding: 33px 45px 43px;
   }
 }

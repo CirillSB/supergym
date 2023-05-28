@@ -1,0 +1,11 @@
+.btn-prev {
+  right: 28px;
+
+  @include tablet {
+    left: 6px;
+  }
+
+  @include mobile {
+    left: 4px;
+  }
+}
