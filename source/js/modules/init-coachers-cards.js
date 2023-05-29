@@ -20,16 +20,16 @@ export const initCoachersCards = () => {
 
   const showDescription = () => {
     // if (window.matchMedia('(max-width: 1199px)').matches) {
-      for (let i = 0; i < cards.length; i++) {
-        if (event.target === image[i] || event.target === title[i]) {
-          hideCardsDescriptions();
-          cardsDescriptions[i].style.visibility = 'visible';
-          cardsDescriptions[i].style.opacity = '1';
-          if (!title[i].classList.contains('hidden')) {
-            title[i].classList.add('hidden');
-          }
+    for (let i = 0; i < cards.length; i++) {
+      if (event.target === image[i] || event.target === title[i]) {
+        hideCardsDescriptions();
+        cardsDescriptions[i].style.visibility = 'visible';
+        cardsDescriptions[i].style.opacity = '1';
+        if (!title[i].classList.contains('hidden')) {
+          title[i].classList.add('hidden');
         }
       }
+    }
     // }
   };
 
@@ -37,19 +37,19 @@ export const initCoachersCards = () => {
     hideCardsDescriptions();
   };
 
-// for (let i; i < cardsDescriptions.length; i++) {
-//   cardsDescriptions[i].addEventListener('click', () => {
-//     console.log('obj');
-//   })
-// }
- const hideCard = () => {
-      if (event.target === gallery) {
-        // cards.forEach((e) => {
-        //   e.classList.remove('hover');
-        // })
-        hideDescription();
-      }
-  }
+  // for (let i; i < cardsDescriptions.length; i++) {
+  //   cardsDescriptions[i].addEventListener('click', () => {
+  //     console.log('obj');
+  //   })
+  // }
+  const hideCard = () => {
+    if (event.target === gallery) {
+      // cards.forEach((e) => {
+      //   e.classList.remove('hover');
+      // })
+      hideDescription();
+    }
+  };
 
 
   canvas.addEventListener('pointerdown', hideDescription);

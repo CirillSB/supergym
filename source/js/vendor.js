@@ -26,9 +26,11 @@ let swiper = new Swiper('.swiper', {
   breakpoints: {
     // when window width is >= 320px
     320: {
+
       slidesPerView: 1,
-      // spaceBetween: 10,
+      spaceBetween: 0,
       centeredSlides: true,
+      direction: 'horizontal',
     },
     // when window width is >= 480px
     // 480: {

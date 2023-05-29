@@ -18,7 +18,7 @@ export const initHover = () => {
         }
       }
     }
-  }
+  };
 
   // const hideCard = () => {
   //   // console.log(event.currentTarget);
@@ -45,9 +45,9 @@ export const initHover = () => {
         }
       }
     }
-}
+  };
 
-    gallery.addEventListener('mouseover', showCard);
-    gallery.addEventListener('mouseout', hideCard);
-  }
+  gallery.addEventListener('mouseover', showCard);
+  gallery.addEventListener('mouseout', hideCard);
+};
 

@@ -86,7 +86,8 @@
 .slider__button-wrapper {
   position: relative;
   width: calc(103 / 1366 * 100%);
-  height: 100px;
+  // height: 100px;
+  height: 100%;
 
   @include mobile {
     width: 11%;

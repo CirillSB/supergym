@@ -3119,7 +3119,7 @@ button,
 .slider__button-wrapper {
   position: relative;
   width: 7.5402635432%;
-  height: 100px;
+  height: 100%;
 }
 
 .slider__button {
@@ -3596,14 +3596,17 @@ button,
 
 .feedback-slider__button {
   position: absolute;
-  top: 0;
-  bottom: 0;
+  top: 50%;
   left: 0;
   right: 0;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
   z-index: 100;
   background-color: #ffffff;
   border: none;
   cursor: pointer;
+  max-height: 36px;
 }
 
 .feedback-slider__inner {
@@ -6302,6 +6305,8 @@ button.swiper-pagination-bullet {
   .btn--transparent:hover:not(.focus-visible):hover:not(.focus-visible) {
     background-color: #ffffff;
     color: #ed0233;
+    -webkit-box-shadow: 0 0 100px #ed0233;
+    box-shadow: 0 0 100px #ed0233;
   }
 
   .phone-link:hover:not(.focus-visible):hover:not(.focus-visible) {
@@ -6370,6 +6375,8 @@ button.swiper-pagination-bullet {
   .btn--transparent.focus-visible:focus:hover:not(.focus-visible) {
     background-color: #ffffff;
     color: #ed0233;
+    -webkit-box-shadow: 0 0 100px #ed0233;
+    box-shadow: 0 0 100px #ed0233;
   }
 
   .btn:hover:not(.focus-visible) {

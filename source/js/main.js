@@ -26,8 +26,11 @@ import {
   initDynamicAdaptive
 } from './modules/init-dynamic-adaptive';
 import {
-  setMaskTel
-} from './modules/set-mask-tel';
+  hidePoster
+} from './modules/hide-poster';
+// import {
+//   setMaskTel
+// } from './modules/set-mask-tel';
 // import {
 //   initHover
 // } from './modules/init-hover';
@@ -41,8 +44,10 @@ window.addEventListener('DOMContentLoaded', () => {
   // ---------------------------------
 
   iosVhFix();
-  setMaskTel();
+  // setMaskTel();
 
+  // hidePoster();
+  document.addEventListener('keyup', hidePoster);
   // Modules
   // ---------------------------------
 
@@ -57,6 +62,7 @@ window.addEventListener('DOMContentLoaded', () => {
     form.init();
     initPlayer();
     initCoachersCards();
+    hidePoster();
     // initHover();
   });
 });

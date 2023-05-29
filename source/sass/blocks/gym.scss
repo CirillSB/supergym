@@ -153,6 +153,22 @@
   max-height: 228px;
   cursor: pointer;
 
+  // @include hover-focus {
+  //   @media (hover: hover) {
+  //     &:hover:not(.focus-visible) {
+
+  //     }
+  //   }
+
+  //   &.focus-visible:focus {
+  //             .gym__video--poster {
+  //         &::after {
+  //           content: none;
+  //         }
+  //       }
+  //   }
+  // }
+
   @include tablet {
     top: 503px;
     left: 50%;

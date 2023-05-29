@@ -24,6 +24,7 @@
         &:hover:not(.focus-visible) {
           background-color: $color-default-white;
           color: $color-torch-red;
+          box-shadow: 0 0 100px $color-torch-red;
         }
       }
 

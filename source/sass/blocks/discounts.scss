@@ -32,7 +32,6 @@
       margin-bottom: 16px;
       align-items: center;
     }
-
   }
 
   dt {
@@ -81,8 +80,8 @@
     }
 
     &.focus-visible:focus {
-        background-color: $color-cobalt;
-        color: $color-default-white;
+      background-color: $color-cobalt;
+      color: $color-default-white;
     }
   }
 }
